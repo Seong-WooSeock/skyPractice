@@ -1,0 +1,366 @@
+﻿@charset "utf-8";
+body{
+	background-image: url('/images/background1.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+	background-color: #0f0f0f;
+}
+
+body {
+	font: 14px;
+}
+#logo{
+	/* 로고 좌측방향 공백 */
+	padding-left: 25px; 
+}
+.container{
+	/* 반응형 웹 구현을 위한 너비와 마진 */
+	width: 96%;
+    margin: 0 auto;
+}
+	/* =====================맨위 로그인 및 사이트 이동바===================== */
+#PT_Consulting{
+	top: 0;
+	width: 96%;
+	height: 21px;
+	margin: 0 auto;
+	position: fixed;
+	background-image: url('/images/background1.jpg');
+	background-repeat: no-repeat;
+	display: flex;	
+}
+
+#pilatesLogo{
+	margin-top: -8px;
+	padding-left: 10px;
+	position: relative;
+}
+#pilatesText{
+	margin-top: -2px;
+	padding-left: 4px;
+	position: relative;
+	font-size:20px;
+	font-family: 'Bebas Neue', cursive;
+	background: linear-gradient(to right bottom,#C99335, #F0E7A2 70%, #C99335);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+}
+#golfLogo{
+	margin-top: -8px;
+	padding-left: 14px;
+	position: relative;
+}
+#golfText{
+	margin-top: -2px;
+	padding-left: 4px;
+	position: relative;
+	font-size:20px;
+	font-family: 'Bebas Neue', cursive;
+	background: linear-gradient(to right bottom,#C99335, #F0E7A2 70%, #C99335);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+}
+#loginBtn{
+	position: absolute;
+	top:0;
+	right: 40px;
+	font-size:19px;
+	font-family: 'Bebas Neue', cursive;
+	text-align: center;
+	background: linear-gradient(to right bottom,#C99335, #F0E7A2 70%, #C99335);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+}
+#centerMap{
+	position: absolute;
+	top:0;
+	right: 130px;
+	font-size:19px;
+	font-family: 'Bebas Neue', cursive;
+	text-align: center;
+	background: linear-gradient(to right bottom,#C99335, #F0E7A2 70%, #C99335);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+}
+	/* =====================맨위 로그인 및 사이트 이동바 끝===================== */
+	/* =====================헤더======================================= */
+	header {
+		width: 100%;
+		padding: 0;
+		position:relative;
+		height: 100px;
+		position: fixed;
+	}
+	
+	.navi{
+		margin-top: -7px;
+		box-sizing: content-box;
+		position:relative;
+		background-image: url('/images/background1.jpg');
+		background-repeat: no-repeat;
+		width:100%;
+		height: 120px;
+	}
+
+	.navi ul{
+		list-style: none; 
+		height:50px;
+		padding-top:35px;
+		float: right;
+		display: flex;	
+	}
+	.navi a img{
+		padding:0;
+		margin: 0;
+		float: left;
+	}
+	.navi ul li {
+		padding:0;
+		margin: 0;
+		position: relative;
+		display:inline-block;
+		font-size:20px;
+		font-family: 'Bebas Neue', cursive;
+		background: linear-gradient(to right bottom,#C99335, #F0E7A2 70%, #C99335);
+		-webkit-text-fill-color: transparent;
+		-webkit-background-clip: text;
+	}
+	
+	.navi a, .navi a:visited {
+		margin-top: 20px;
+		padding:0;
+		display: block;
+		width: 150px; 
+		text-decoration: none;
+	}
+	.navi a:hover, .navi a:active, .navi a:focus {
+		font-size: 21px;
+		background: linear-gradient(to right top,#F0E7A2, #C99335 30%, #F0E7A2);
+		-webkit-text-fill-color: transparent;
+		-webkit-background-clip: text;
+	}
+
+	#headerMenuToggle{
+		width: 40%;
+		height: 744px;
+		background: #1d1c1c;
+		opacity: 0.7;
+		position: absolute;
+		right: 20px;
+		top: 10px;
+		color: #242424;
+		font-size: 30px;
+		display: none;
+	}
+
+	#headerMenuToggleImg{
+		display: none;
+		width: 70px;
+		height: 70px;
+		position: absolute;
+		top: 25px;
+		right: 7%; 
+	}
+	@media screen and (max-width : 960px) {/*769~935*/
+		/* =====================헤더 769~935======================================= */
+		.navi{
+			box-sizing: content-box;
+			position:relative;
+			background-image: url('/images/background1.jpg');
+			background-repeat: no-repeat;
+			flex-direction: column;
+			align-items: flex-start;
+		}
+		
+		.navi ul{
+			list-style: none; 
+			flex-direction: column;
+			align-items:flex-end;
+			width: 100%;
+			display: none;
+		}
+		.navi ul li {
+			font-size: 30px;
+			padding: 5px 15px;
+		}
+		#headerMenuToggleImg{
+			display: block;
+		}
+		.navi a:hover, .navi a:active, .navi a:focus {
+			font-size: 33px;
+		}
+
+		/* =====================헤더 끝======================================= */
+	}
+	@media screen and (max-width : 768px) {/*321 ~ 768*/
+		/* =====================헤더 321 ~ 768======================================= */
+		.navi{
+			box-sizing: content-box;
+			position:relative;
+			background-image: url('/images/background1.jpg');
+			background-repeat: no-repeat;
+			flex-direction: column;
+			align-items: flex-start;
+		}
+		
+		.navi ul{
+			list-style: none; 
+			flex-direction: column;
+			align-items:flex-end;
+			width: 100%;
+			display: none;
+		}
+
+		.navi ul li {
+			padding: 5px 15px;
+			font-size: 25px;
+		}
+		#headerMenuToggleImg{
+			display: block;
+		}
+
+		.navi a:hover, .navi a:active, .navi a:focus {
+			font-size: 28px;
+		}
+
+		/* =====================헤더 끝======================================= */
+	}
+	@media screen and (max-width: 320px){/*0 ~ 320*/
+		/* =====================헤더 0 ~ 320======================================= */
+		.navi{
+			box-sizing: content-box;
+			position:relative;
+			background-image: url('/images/background1.jpg');
+			background-repeat: no-repeat;
+			flex-direction: column;
+			align-items: flex-start;
+		}
+		
+		.navi ul{
+			list-style: none; 
+			flex-direction: column;
+			align-items:flex-end;
+			width: 100%;
+			display: none;
+		}
+
+		.navi ul li {
+			padding: 5px 15px;
+		}
+		#headerMenuToggleImg{
+			display: block;
+		}
+
+		/* =====================헤더 끝======================================= */
+	}
+/* ==================슬라이드 광고판==================== */
+	.adContainer{
+		padding-top: 136px;
+	}
+	.mySlides {display: none;}
+	img {vertical-align: middle;}
+	
+	/* Slideshow container */
+	.slideshow-container {
+	width: 100%;
+	margin: auto;
+	}
+	
+	/* The dots/bullets/indicators */
+	.dot {
+	height: 2px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #717171;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+	}
+	.dotContainer{
+		margin-top:-40px;
+		margin-bottom: 30px;
+	}
+	.active {
+		background-color: #bbb;
+	}
+	
+	/* Fading animation */
+	.fade {
+	  -webkit-animation-name: fade;
+	  -webkit-animation-duration: 1.5s;
+	  animation-name: fade;
+	  animation-duration: 1.5s;
+	}
+	
+
+/* ==================슬라이드 광고판 끝==================== */
+.imgContainer{
+	display: block;
+}
+
+#imgControl1{
+	padding-bottom: 20px;
+}
+
+.imgContainer img{
+	width: 100%
+}
+#imgControl2{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.homepageExplain{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background: black;
+	opacity: 0.5;	
+	z-index: 1;
+}
+
+.homepageExplain p,h2{
+	text-align: center;
+	color: white;
+	font-family: 'Nanum Gothic', sans-serif;
+	background: linear-gradient(to right bottom,#C99335, #F0E7A2 70%, #C99335);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+
+}
+
+#eventBar{
+	height: 25px;
+	padding: 5px;
+	padding-top: 9px;
+	border: solid 4px;
+	border-image: linear-gradient(to right bottom,#C99335, #F0E7A2 70%, #C99335);
+	border-image-slice: 1;
+	margin-left: 35%;
+	margin-right: 35%;
+	text-decoration: none;
+}
+#eventBar:hover, #eventBar:active, #eventBar:focus{
+	font-size: 15px;
+	background: linear-gradient(to right top,#F0E7A2, #C99335 30%, #F0E7A2);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+}
+
+header, section, footer, aside, article, figure {
+	display: block;
+}
+
+.banner {
+	margin: 0 10px 15px 10px;
+	padding:0;	
+}
+footer{
+	font-family: 'Nanum Gothic', sans-serif;
+	padding-top: 10px;
+	border: 1px solid white;
+	border-radius: 2px;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	font: 8px;
+}

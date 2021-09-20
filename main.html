@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>SKY365 Fitness</title>
+    <link href="css/style2.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="container">
+        <div id="PT_Consulting">
+            <a href="#" class="pilates"><img id="pilatesLogo" src="images/pliatesLogo.png" alt="pliateslogo"
+                    width="21px" height="21px"><span id="pilatesText">pilates</span></a>
+            <a href="#" class="golf"><img id="golfLogo" src="images/golflogo.png" alt="골프로고" width="21px"
+                    height="21px"><span id="golfText">golf</span></a>
+            <a href="#" id="centerMap">find a center <img src="images/findlogo.png" alt="돋보기" width="16px"
+                    height="16px"></a>
+            <a href="#" id="loginBtn">sign-in</a>
+
+        </div>
+        <header>
+            <nav class="navi">
+                <a id="logo" href="main.html"><img src="images/goldlogo.png" width="120px" height="120px"
+                        alt="금색 로고"></a>
+                <img id="headerMenuToggleImg" src="images/menuList.png" alt="메뉴리스트">
+                <div id="headerMenuToggle"></div>
+                <ul id="menuLists">
+                    <li><a href="#">Trainer</a></li>
+                    <li><a href="#">Machine</a></li>
+                    <li><a href="#">Photo</a></li>
+                    <li><a href="#">Account</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- <script src="js/main.js"></script> -->
+        <div class="content">
+            <div class="adContainer">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="images/ad1.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="images/ad2.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="images/ad3.jpg" style="width:100%">
+                    </div>
+                    <div class="dotContainer" style="text-align:center">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="imgContainer" id=imgControl1>
+                <img id="firstImg" src="images/mainImg.jpg" usemap="#trainerDetail">
+                <map name="trainerDetail">
+                    <area class="trainerDetail1" onclick="erickDetail()" alt="head1" coords="236,221,324,330"
+                        shape="rect">
+                    <area class="trainerDetail1" onclick="erickDetail()" alt="body1" coords="185,329,387,662"
+                        shape="rect">
+                    <area class="trainerDetail2" onclick="nickDetail()" alt="head2" coords="684,197,42" shape="circle">
+                    <area class="trainerDetail2" onclick="nickDetail()" alt="body2" coords="586,235,764,440"
+                        shape="rect">
+                    <area class="trainerDetail3" onclick="juneDetail()" alt="head3" coords="1013,258,50" shape="circle">
+                    <area class="trainerDetail3" onclick="juneDetail()" alt="body3" coords="930,339,1132,489"
+                        shape="rect">
+                </map>
+            </div>
+            <div class="homepageExplain">
+                <h2>SKY365 온천점 만의 특별한 이벤트</h2>
+                <p>함께해서 더 즐겁다 2인 이상 PT 할인<br>코로나 이겨내자 이벤트</p>
+                <p id="eventBar"><a href="#">신청하기</a></p>
+            </div>
+            <div class="imgContainer" id="imgControl2">
+                <img src="images/testimg.jpg">
+            </div>
+            <div class="imgContainer">
+                <img src="images/testimg2.jpg">
+            </div>
+        </div>
+        <!-- <script src="js/main.js"></script> -->
+        <footer>
+            <address>
+                <p>부산광역시 금정구 온천장 홈플러스 23층</p>
+                <p>woo_seock@naver.com</p>
+            </address>
+            <p> Copyright ⓒ. All rights reserved.</p>
+        </footer>
+        <script src="js/main.js"></script>
+    </div>
+
+</body>
+
+</html>
