@@ -11,15 +11,13 @@ body {
 	font: 14px;
 }
 #logo{
-	/* 로고 좌측방향 공백 */
 	padding-left: 25px; 
 }
 .container{
-	/* 반응형 웹 구현을 위한 너비와 마진 */
 	width: 96%;
     margin: 0 auto;
 }
-	/* =====================맨위 로그인 및 사이트 이동바===================== */
+	/* ===================== 맨위 로그인 및 사이트 이동바 ===================== */
 #PT_Consulting{
 	top: 0;
 	width: 96%;
@@ -83,8 +81,9 @@ body {
 	-webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;
 }
-	/* =====================맨위 로그인 및 사이트 이동바 끝===================== */
-	/* =====================헤더======================================= */
+	/* ===================== 맨위 로그인 및 사이트 이동바 끝 ===================== */
+
+	/* ===================== 헤더 ===================== */
 	header {
 		width: 100%;
 		padding: 0;
@@ -114,6 +113,8 @@ body {
 		padding:0;
 		margin: 0;
 		float: left;
+		width: 120px;
+		height: 120px;
 	}
 	.navi ul li {
 		padding:0;
@@ -162,8 +163,10 @@ body {
 		top: 25px;
 		right: 7%; 
 	}
+	/* ===================== 헤더 끝 ===================== */
+
 	@media screen and (max-width : 960px) {/*769~935*/
-		/* =====================헤더 769~935======================================= */
+		/* ===================== 헤더 769~935 ===================== */
 		.navi{
 			box-sizing: content-box;
 			position:relative;
@@ -191,10 +194,10 @@ body {
 			font-size: 33px;
 		}
 
-		/* =====================헤더 끝======================================= */
+		/* ===================== 헤더 끝 769~935 ===================== */
 	}
 	@media screen and (max-width : 768px) {/*321 ~ 768*/
-		/* =====================헤더 321 ~ 768======================================= */
+		/* ===================== 헤더 321 ~ 768 ===================== */
 		.navi{
 			box-sizing: content-box;
 			position:relative;
@@ -224,10 +227,10 @@ body {
 			font-size: 28px;
 		}
 
-		/* =====================헤더 끝======================================= */
+		/* ===================== 헤더 끝 321 ~ 768 ===================== */
 	}
 	@media screen and (max-width: 320px){/*0 ~ 320*/
-		/* =====================헤더 0 ~ 320======================================= */
+		/* ===================== 헤더 0 ~ 320 ===================== */
 		.navi{
 			box-sizing: content-box;
 			position:relative;
@@ -252,9 +255,9 @@ body {
 			display: block;
 		}
 
-		/* =====================헤더 끝======================================= */
+		/* ===================== 헤더 끝 0 ~ 320 ===================== */
 	}
-/* ==================슬라이드 광고판==================== */
+/* ===================== 슬라이드 광고판 ===================== */
 	.adContainer{
 		padding-top: 136px;
 	}
@@ -269,8 +272,8 @@ body {
 	
 	/* The dots/bullets/indicators */
 	.dot {
-	height: 2px;
-	width: 15px;
+	height: 4px;
+	width: 18px;
 	margin: 0 2px;
 	background-color: #717171;
 	display: inline-block;
@@ -293,7 +296,9 @@ body {
 	}
 	
 
-/* ==================슬라이드 광고판 끝==================== */
+/* ===================== 슬라이드 광고판 끝 ===================== */
+
+/* ===================== 메인페이지 이미지 ===================== */
 .imgContainer{
 	display: block;
 }
@@ -309,7 +314,9 @@ body {
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
+/* ===================== 메인페이지 이미지 끝 ===================== */
 
+/* ===================== 실시간 회원수 ===================== */
 .homepageExplain{
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -325,30 +332,45 @@ body {
 	background: linear-gradient(to right bottom,#C99335, #F0E7A2 70%, #C99335);
 	-webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;
-
 }
-
-#eventBar{
-	height: 25px;
-	padding: 5px;
-	padding-top: 9px;
-	border: solid 4px;
-	border-image: linear-gradient(to right bottom,#C99335, #F0E7A2 70%, #C99335);
-	border-image-slice: 1;
-	margin-left: 35%;
-	margin-right: 35%;
-	text-decoration: none;
+#currentUser{
+	font-size: 25px;
+	color: white;
 }
-#eventBar:hover, #eventBar:active, #eventBar:focus{
-	font-size: 15px;
-	background: linear-gradient(to right top,#F0E7A2, #C99335 30%, #F0E7A2);
+#currentGolfUser{
+	font-size: 25px;
+	color: white;
+}
+#lightBox{
+	text-align: center;
+}
+.hallNumber{
+	margin: 2px 1%;
+	padding-top: 14px;
+	width: 55px;
+	height: 60px;
+	text-align: center;
+	font-family: 'Nanum Gothic', sans-serif;
+	background: linear-gradient(to right bottom,#C99335, #F0E7A2 70%, #C99335);
 	-webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;
+	border: 1px solid white;
+	display: inline-block;
+	
 }
 
-header, section, footer, aside, article, figure {
-	display: block;
+.light {
+	margin-top: 10px;
+	height: 15px;
+	width: 15px;
+	margin-left: 2px;
+	margin-right: 2px;
+	background-color: red;
+	border-radius: 50%;
+	display: inline-block;
 }
+
+/* ===================== 실시간 회원수 끝 ===================== */
 
 .banner {
 	margin: 0 10px 15px 10px;
