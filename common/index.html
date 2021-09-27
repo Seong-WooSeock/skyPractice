@@ -6,7 +6,7 @@
     <meta http-equiv="x-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>SKY365 Fitness</title>
-    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,27 +24,28 @@
     <div class="container">
         <!-- sky365에 피트니스 외 골프와 필라테스 페이지 이동 아이콘, 센터 지도 및 로그인 구축, 필요시 사이트맵 핸들링 -->
         <div id="PT_Consulting">
-            <a href="#" class="pilates"><img id="pilatesLogo" src="images/pliatesLogo.png" alt="pliateslogo"
-                    width="21px" height="21px"><span id="pilatesText">pilates</span></a>
-            <a href="#" class="golf"><img id="golfLogo" src="images/golflogo.png" alt="골프로고" width="21px"
-                    height="21px"><span id="golfText">golf</span></a>
-            <a href="#" id="centerMap">find a center <img src="images/findlogo.png" alt="돋보기" width="16px"
+            <a href="./otherFunction/sky365Pilates.html" class="pilates"><img id="pilatesLogo"
+                    src="../images/pliatesLogo.png" alt="pliateslogo" width="21px" height="21px"><span
+                    id="pilatesText">pilates</span></a>
+            <a href="./otherFunction/sky365Golf.html" class="golf"><img id="golfLogo" src="../images/golflogo.png"
+                    alt="골프로고" width="21px" height="21px"><span id="golfText">golf</span></a>
+            <a href="#" id="centerMap">find a center <img src="../images/findlogo.png" alt="돋보기" width="16px"
                     height="16px"></a>
-            <a href="#" id="loginBtn">sign-in</a>
-
+            <a href="./user/userLogin.html" id="loginBtn">sign-in</a>
+            <div id="findMapBox"><img src="" alt="map"></div>
         </div>
         <!-- 헤더 (반응형 웹 구축 , 마우스 휠을 내릴경우 헤더의 height가 낮아지는 기능 구축) -->
         <header>
             <nav class="navi" id="navi">
-                <a id="logo" href="main.html"><img id="logoImg" src="images/goldlogo.png" alt="금색 로고"></a>
-                <img id="headerMenuToggleImg" src="images/menuList.png" alt="메뉴리스트">
+                <a id="logo" href="index.html"><img id="logoImg" src="../images/goldlogo.png" alt="금색 로고"></a>
+                <img id="headerMenuToggleImg" src="../images/menuList.png" alt="메뉴리스트">
                 <div id="headerMenuToggle"></div>
                 <ul id="menuLists">
-                    <li><a href="#">Trainer</a></li>
-                    <li><a href="#">Machine</a></li>
-                    <li><a href="#">Photo</a></li>
-                    <li><a href="#">Account</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="trainerIntroduce.html">Trainer</a></li>
+                    <li><a href="trainingEquipment.html">Equipments</a></li>
+                    <li><a href="trainingPhoto.html">Photo</a></li>
+                    <li><a href="member.html">Member</a></li>
+                    <li><a href="about.html">About</a></li>
                 </ul>
             </nav>
         </header>
@@ -54,13 +55,13 @@
             <div class="adContainer">
                 <div class="slideshow-container">
                     <div class="mySlides fade">
-                        <img src="images/ad1.jpg" style="width:100%">
+                        <img src="../images/ad1.jpg" style="width:100%">
                     </div>
                     <div class="mySlides fade">
-                        <img src="images/ad2.jpg" style="width:100%">
+                        <img src="../images/ad2.jpg" style="width:100%">
                     </div>
                     <div class="mySlides fade">
-                        <img src="images/ad3.jpg" style="width:100%">
+                        <img src="../images/ad3.jpg" style="width:100%">
                     </div>
                     <div class="dotContainer" style="text-align:center">
                         <span class="dot"></span>
@@ -72,7 +73,7 @@
 
             <!-- 메인페이지 트레이너 간략소개(사진속 마우스 포인터가 해당 트레이너의 몸이나 얼굴 부분에 커서를 올리면 간략 소개글이 올라오도록 핸들링) -->
             <div class="imgContainer" id=imgControl1>
-                <img id="firstImg" src="images/mainImg.jpg" usemap="#trainerDetail">
+                <img id="firstImg" src="../images/mainImg.jpg" usemap="#trainerDetail">
                 <map name="trainerDetail">
                     <area class="trainerDetail1" onclick="erickDetail()" alt="head1" coords="236,221,324,330"
                         shape="rect">
@@ -111,12 +112,12 @@
 
             <!-- 메인 페이지 이미지 태그1 -->
             <div class="imgContainer" id="imgControl2">
-                <img src="images/testimg.jpg">
+                <img src="../images/testimg.jpg">
             </div>
 
             <!-- 메인 페이지 이미지 태그2 -->
             <div class="imgContainer">
-                <img src="images/testimg2.jpg">
+                <img src="../images/testimg2.jpg">
             </div>
         </div>
 
@@ -129,7 +130,7 @@
             <p> Copyright ⓒ. All rights reserved.</p>
         </footer>
         <!-- 스크립트 연결 -->
-        <script src="js/main.js"></script>
+        <script src="../js/main.js"></script>
     </div>
 
 </body>
