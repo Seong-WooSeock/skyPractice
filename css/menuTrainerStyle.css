@@ -1,0 +1,52 @@
+.content{
+    width: 100%;
+}
+#introduceBox{
+    padding-top: 135px;
+    text-align: center;
+}
+#trainerImg{
+   width: 1000px;
+}
+#trainerBox{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.trainer{
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    border: 1px solid black;
+    cursor: pointer;
+}   
+
+@media screen and (max-width: 845px){
+    .trainer{
+        width: 100px;
+        height: 100px;
+    }
+
+}
+@media screen and (max-width: 580px){
+    .trainer{
+        width: 75px;
+        height: 75px;
+    }
+
+}
+@media screen and (max-width: 426px){
+    .trainer{
+        width: 60px;
+        height: 60px;
+    }
+
+}
+@media screen and (max-width: 320px){
+    .trainer{
+        width: 50px;
+        height: 50px;
+    }
+
+}
