@@ -1,12 +1,16 @@
 .content{
     width: 100%;
 }
+.navi{
+    margin-top: -51px;
+}
 #introduceBox{
-    padding-top: 135px;
+    padding-top: 90px;
     text-align: center;
 }
 #trainerImg{
-   width: 1000px;
+   width: 75%;
+   height: 570px;
 }
 #trainerBox{
     margin-bottom: 10px;

@@ -6,6 +6,7 @@
     <meta http-equiv="x-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>SKY365 Fitness</title>
+    <link href="../css/web_mainImg.css" rel="stylesheet" type="text/css">
     <link href="../css/style.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,9 +19,24 @@
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
+    <div id="indexPic">
+        <img id="mainPic" src="../images/Main.jpg" alt="">
+        <span class="mainEvent" id="erick"></span>
+        <span class="mainEvent" id="nick"></span>
+        <span class="mainEvent" id="june"></span>
+        <span id="clickMe"><i class="fas fa-hand-pointer fa-rotate-180"></i>click me</span>
+        <span id="exitEvent"><i class="fal fas fa-times fa-2x"></i></span>
+        <span id="scrollEvent">scroll down</span>
+        <span id="scrollIcon">
+            <i class="fas fa-angle-double-down fa-3x"></i>
+        </span>
+        <!-- <span id="cursorEvent"><i class="fas fa-heart fa-2x"></i></span> -->
+    </div>
     <div class="container">
         <!-- sky365에 피트니스 외 골프와 필라테스 페이지 이동 아이콘, 센터 지도 및 로그인 구축, 필요시 사이트맵 핸들링 -->
         <div id="PT_Consulting">
@@ -42,8 +58,8 @@
                 <ul id="menuLists">
                     <li><a href="./menu/trainerIntroduce.html">Trainer</a></li>
                     <li><a href="./menu/trainingEquipment.html">Equipments</a></li>
-                    <li><a href="./menu/trainingPhoto.html">Photo</a></li>
-                    <li><a href="./menu/member.html">Member</a></li>
+                    <li><a href="./menu/photo.html">Photo</a></li>
+                    <li><a href="./menu/trainingEvent.html">Event</a></li>
                     <li><a href="./menu/about.html">About</a></li>
                 </ul>
             </nav>
@@ -70,31 +86,13 @@
                     </div>
                 </div>
             </div>
-
-            <!-- 메인페이지 트레이너 간략소개(사진속 마우스 포인터가 해당 트레이너의 몸이나 얼굴 부분에 커서를 올리면 간략 소개글이 올라오도록 핸들링) -->
-            <div class="imgContainer" id=imgControl1>
-                <img id="firstImg" src="../images/mainImg.jpg" usemap="#trainerDetail">
-                <map name="trainerDetail">
-                    <area class="trainerDetail1" onclick="erickDetail()" alt="head1" coords="236,221,324,330"
-                        shape="rect">
-                    <area class="trainerDetail1" onclick="erickDetail()" alt="body1" coords="185,329,387,662"
-                        shape="rect">
-                    <area class="trainerDetail2" onclick="nickDetail()" alt="head2" coords="684,197,42" shape="circle">
-                    <area class="trainerDetail2" onclick="nickDetail()" alt="body2" coords="586,235,764,440"
-                        shape="rect">
-                    <area class="trainerDetail3" onclick="juneDetail()" alt="head3" coords="1013,258,50" shape="circle">
-                    <area class="trainerDetail3" onclick="juneDetail()" alt="body3" coords="930,339,1132,489"
-                        shape="rect">
-                </map>
-            </div>
-
             <!-- 센터이용회원 현황 -->
             <div class="homepageExplain">
-                <h2>SKY365 온천장점 사용현황</h2>
+                <h2>SKY365 온천장점 이용현황</h2>
                 <p>&#x0003C;SKY365는 코로나 방역수칙을 철저히 준수하고있습니다.&#x0003E;</SKY365>
                 </p>
-                <p>현재 스카이 피트니스 이용 회원 수:<span id="currentUser">20</span>명</p>
-                <p> 현재 스카이 골프 이용 회원 수:<span id="currentGolfUser">7</span>명</p>
+                <p>현재 스카이 피트니스 이용 회원 수:<span id="currentUser">00</span>명</p>
+                <p> 현재 스카이 골프 이용 회원 수:<span id="currentGolfUser">00</span>명</p>
                 <!-- 홀에 이용인원이 있을 경우 #light의 색을 red -> green으로 변경 기능 -->
                 <div id="lightBox">
                     <span class="hallNumber">1번홀<span class="light"></span></span>
@@ -130,7 +128,11 @@
             <p> Copyright ⓒ. All rights reserved.</p>
         </footer>
         <!-- 스크립트 연결 -->
+        <script src="../js/main_event.js"></script>
         <script src="../js/main.js"></script>
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+        <script src="https://kit.fontawesome.com/39caf77dda.js" crossorigin="anonymous"></script>
     </div>
 
 </body>

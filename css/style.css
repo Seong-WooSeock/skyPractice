@@ -10,7 +10,9 @@ body{
 body {
 	font: 14px;
 }
-
+#logo{
+	padding-left: 25px;
+}
 .container{
 	width: 96%;
     margin: 0 auto;
@@ -22,6 +24,7 @@ body {
 	height: 21px;
 	margin: 0 auto;
 	position: fixed;
+	z-index :9998;
 	background-image: url('/images/background1.jpg');
 	background-repeat: no-repeat;
 	display: flex;	
@@ -91,6 +94,7 @@ body {
 	height: 250px;
 	position: fixed;
 	border-radius: 15%;
+	z-index :9998;
 	top: 25px;
 	right: 5px;
 	display: none;
@@ -110,6 +114,7 @@ body {
 		position:relative;
 		height: 100px;
 		position: fixed;
+		z-index :9997;
 	}
 	
 	.navi{
@@ -355,7 +360,6 @@ body {
 	padding-bottom: 20px;
 	background: black;
 	opacity: 0.8;	
-	z-index: 1;
 }
 
 .homepageExplain p,h2{
@@ -435,3 +439,4 @@ footer{
 	width: 200px;
 	text-align: center;
 }
+

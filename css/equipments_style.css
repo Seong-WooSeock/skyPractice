@@ -1,0 +1,23 @@
+#floorPlan{
+    padding-top: 110px;
+    text-align: center;
+}
+#floorPlanImg{
+    padding: 20px 0;
+    width: 600px;
+}
+.eq_use{
+    text-align: center;
+}
+
+.eq_use_list{
+    color: wheat;
+}
+
+@media screen and (max-width: 320px){
+    #floorPlanImg{
+        padding: 20px 0;
+        width: 300px;
+    }
+
+}

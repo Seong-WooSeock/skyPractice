@@ -1,0 +1,69 @@
+.page_PicBox{
+    width: 100%;
+    text-align: center;
+    padding-top: 110px;
+}
+
+.page_container{
+    width: 96%;
+    background-color: #191919;
+}
+
+.pic_list{
+    list-style: none; 
+    display: flex;	
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.pic{
+    text-align: center;
+    width: 40%;
+    height: 600px;
+    margin: 4%;
+    border: 1px solid white;
+}
+
+.picBox{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #191919;
+    position: relative;
+}
+
+.photo_by{
+    color: white;
+    font-size: 25px;
+    font-family: 'Bebas Neue', cursive;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    z-index: 999;
+    opacity: 0;
+    transition: all .5s cubic-bezier(.25, .46, .45, 1);
+    cursor: pointer;
+}
+
+.picBox img{
+    width: 100%;
+    height: 600px;
+}
+
+h2{
+    padding-top: 50px;
+    font-size:50px;
+    font-family: 'Bebas Neue', cursive;
+    background: linear-gradient(to right bottom,#C99335, #F0E7A2 70%, #C99335);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+}
