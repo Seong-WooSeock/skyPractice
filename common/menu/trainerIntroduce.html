@@ -2,7 +2,7 @@
 <html lang="ko">
 
 <head>
-    <meta charset="UTF-8">s
+    <meta charset="UTF-8">
     <meta http-equiv="x-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>SKY365 Trainer</title>
@@ -19,10 +19,12 @@
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-    <div class="container">s
+    <div class="container">
         <!-- sky365에 피트니스 외 골프와 필라테스 페이지 이동 아이콘, 센터 지도 및 로그인 구축, 필요시 사이트맵 핸들링 -->
         <div id="PT_Consulting">
             <a href="../otherFunction/sky365Pilates.html" class="pilates"><img id="pilatesLogo"
@@ -45,33 +47,91 @@
                     <li><a href="trainerIntroduce.html">Trainer</a></li>
                     <li><a href="trainingEquipment.html">Equipments</a></li>
                     <li><a href="photo.html">Photo</a></li>
-                    <li><a href="trainingEvent.html">Event</a></li>
+                    <li><a href="event.html">Event</a></li>
                     <li><a href="about.html">About</a></li>
                 </ul>
             </nav>
         </header>
+        <div id="trainerTab">
+            <ul>
+                <li class="trainerTabDetail" id="allT">all</li>
+                <li class="trainerTabDetail" id="nickT">nick</li>
+                <li class="trainerTabDetail" id="zinoT">zino</li>
+                <li class="trainerTabDetail" id="juneT">june</li>
+                <li class="trainerTabDetail" id="erickT">erick</li>
+                <li class="trainerTabDetail" id="yuneeT">yunee</li>
+            </ul>
+        </div>
         <div class="content">
-            <div id="introduceBox">
-                <img id="trainerImg" src="../../images/nickmainpic.jpg" alt="nickmainpic">
+            <div class="trainerIntro" id="allTrainer">
+                <h2>ALL TRAINER</h2>
+                <div id="introduceBox">
+                    <img id="trainerImg" src="../../images/nickmainpic.jpg" alt="nickmainpic">
+                </div>
+                <div id="trainerBox">
+                    <div class="trainer"><img id="nick" onclick="nickPic()" src="../../images/nickminipic.jpg"
+                            alt="nickminipic" width="100%">
+                    </div>
+                    <div class="trainer"><img id="zino" onclick="zinoPic()" src="../../images/zinominipic.jpg"
+                            alt="nickminipic" width="100%">
+                    </div>
+                    <div class="trainer"><img id="june" onclick="junePic()" src="../../images/juneminipic.jpg"
+                            alt="nickminipic" width="100%">
+                    </div>
+                    <div class="trainer"><img id="erick" onclick="erickPic()" src="../../images/erickminipic.jpg"
+                            alt="nickminipic" width="100%">
+                    </div>
+                    <div class="trainer"><img id="yunee" onclick="yuneePic()" src="../../images/yuneeminipic.jpg"
+                            alt="nickminipic" width="100%">
+                    </div>
+                </div>
             </div>
-            <div id="trainerBox">
-                <div class="trainer"><img id="nick" onclick="nickPic()" src="../../images/nickminipic.jpg"
-                        alt="nickminipic" width="100%">
-                </div>
-                <div class="trainer"><img id="zino" onclick="zinoPic()" src="../../images/zinominipic.jpg"
-                        alt="nickminipic" width="100%">
-                </div>
-                <div class="trainer"><img id="june" onclick="junePic()" src="../../images/juneminipic.jpg"
-                        alt="nickminipic" width="100%">
-                </div>
-                <div class="trainer"><img id="erick" onclick="erickPic()" src="../../images/erickminipic.jpg"
-                        alt="nickminipic" width="100%">
-                </div>
-                <div class="trainer"><img id="yunee" onclick="yuneePic()" src="../../images/yuneeminipic.jpg"
-                        alt="nickminipic" width="100%">
+            <div class="trainerIntro" id="trainerNick">
+                <h2>TRAINING MANAGER NICK</h2>
+                <div id="nickBox">
+                    <img src="../../images/tp1.jpg" alt="" style="width: 100%;">
+                    <div class="ptBA" id="nickPT">
+                        <img src="../../images/before_after.jpg" alt="">
+                        <img src="../../images/before_after.jpg" alt="">
+                    </div>
                 </div>
             </div>
-            <script src="../../js/picChange.js"></script>
+            <div class="trainerIntro" id="trainerZino">
+                <h2>TRAINER ZINO</h2>
+                <div id="zinoBox">
+                    <img src="../../images/tp2.jpg" alt="" style="width: 100%;">
+                    <div class="ptBA" id="zinoPT">
+                        <img src="../../images/before_after.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="trainerIntro" id="trainerJune">
+                <h2>TRAINER JUNE</h2>
+                <div id="juneBox">
+                    <img src="../../images/tp3.jpg" alt="" style="width: 100%;">
+                    <div class="ptBA" id="junePT">
+                        <img src="../../images/before_after.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="trainerIntro" id="trainerErick">
+                <h2>TRAINER ERICK</h2>
+                <div id="erickBox">
+                    <img src="../../images/tp4.jpg" alt="" style="width: 100%;">
+                    <div class="ptBA" id="erickPT">
+                        <img src="../../images/before_after.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="trainerIntro" id="trainerYunee">
+                <h2>TRAINER YUNEE</h2>
+                <div id="yuneeBox">
+                    <img src="../../images/tp5.jpg" alt="" style="width: 100%;">
+                    <div class="ptBA" id="yuneePT">
+                        <img src="../../images/before_after.jpg" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- footer 추후 수정 -->
         <footer>
@@ -82,7 +142,10 @@
             <p> Copyright ⓒ. All rights reserved.</p>
         </footer>
         <!-- 스크립트 연결 -->
+        <script src="../../js/go_intro.js"></script>
         <script src="../../js/main.js"></script>
+        <script src="../../js/trainer_intro.js"></script>
+
 </body>
 
 </html>

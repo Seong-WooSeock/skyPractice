@@ -1,7 +1,9 @@
+.container{
+    text-align: center;
+}
 .page_PicBox{
     width: 100%;
     text-align: center;
-    padding-top: 110px;
 }
 
 .page_container{
@@ -53,6 +55,18 @@
     transition: all .5s cubic-bezier(.25, .46, .45, 1);
     cursor: pointer;
 }
+.learnMore{
+    background: linear-gradient(to right bottom,white, #3b3b3b 50%, #ffffff);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-size: 300% 300%;
+
+    animation-name: change_text_gradient;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+}
+
 
 .picBox img{
     width: 100%;
@@ -60,10 +74,95 @@
 }
 
 h2{
+    margin-top: 14px;
     padding-top: 50px;
     font-size:50px;
     font-family: 'Bebas Neue', cursive;
     background: linear-gradient(to right bottom,#C99335, #F0E7A2 70%, #C99335);
 	-webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;
+}
+
+.detailTab{
+    width: 100%;
+    padding-top: 130px;
+    height: 40px;
+}
+
+.detailTab ul{
+    list-style: none;
+    float: left;
+    display: flex;	
+    padding: 0;
+    margin-bottom: -10px;
+}
+
+.detailTab ul li{
+    padding: 5px 15px 4px 15px;
+    text-align: center;
+    border-right:0px;
+    border-left:0px;
+    border-top: 0px;
+    border-bottom: 4px solid;
+    border-color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    cursor: pointer;
+}
+#all{
+    background: linear-gradient(to right bottom,white, #838383 50%, #ffffff);
+    color: #191919;
+}
+
+#pt{
+    background: none;
+    color: white;
+}
+
+#fc{
+    background: none;
+    color: white;
+}
+
+#all:hover{ 
+    background: linear-gradient(to right bottom,white, #3b3b3b 50%, #ffffff);
+    background-size: 300% 300%;
+    color: #191919;
+
+    animation-name: change_text_gradient;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;  
+}
+#pt:hover{
+    background: linear-gradient(to right bottom,white, #3b3b3b 50%, #ffffff);
+    background-size: 300% 300%;
+    color: #191919;
+    
+    animation-name: change_text_gradient;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;  
+}
+#fc:hover{
+    background: linear-gradient(to right bottom,white, #3b3b3b 50%, #ffffff);
+    background-size: 300% 300%;
+    color: #191919;
+
+    animation-name: change_text_gradient;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;  
+}
+
+@keyframes change_text_gradient{
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }

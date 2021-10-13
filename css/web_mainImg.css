@@ -17,7 +17,7 @@
 
 @keyframes mainOpacity{
     from{
-        opacity: 0.7;
+        opacity: 0.9;
     }
     to{
         opacity: 1;
@@ -79,7 +79,6 @@
 #nick{
     top: 11%;
     left: 46%;
-    
 }
 
 #june{
@@ -151,9 +150,164 @@
     }
 }
 
+/* erick 설명 */
+#erickExplain{
+    position: absolute;
+    z-index: 99999;
+    top: 16%;
+    left: 13%;
+    font-size:2em;
+    font-family: 'Bebas Neue', cursive;
+
+    background: linear-gradient(to right bottom,#C99335, #F0E7A2 70%, #C99335);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-size: 300% 300%;
+    
+    animation-name: change_gradient;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+    display: none;
+}
+#erickExplainDetail{
+    position: absolute;
+    z-index: 99999;
+    top: 33%;
+    left: 31%;
+    color: white;
+	font-family: 'Bebas Neue', cursive;
+    display: none;
+
+    background: linear-gradient(to right bottom,#ffffff, #d8d8d8 70%, #f7f7f7);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-size: 300% 300%;
+    
+    animation-name: change_gradient;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+}
+/* erick 설명 */
+
+/* nick 설명 */
+#nickExplain{
+    position: absolute;
+    z-index: 99999;
+    top: 9%;
+    left: 36%;
+    font-size:2em;
+    font-family: 'Bebas Neue', cursive;
+    display: none;
+
+    background: linear-gradient(to right bottom,#C99335, #F0E7A2 70%, #C99335);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-size: 300% 300%;
+    
+    animation-name: change_gradient;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+}
+#nickExplainDetail{
+    position: absolute;
+    z-index: 99999;
+    top: 15%;
+    left: 20%;
+    color: white;
+	font-family: 'Bebas Neue', cursive;
+    display: none;
+
+    background: linear-gradient(to right bottom,#ffffff, #d8d8d8 70%, #f7f7f7);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-size: 300% 300%;
+    
+    animation-name: change_gradient;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+}
+#nickExplainDetail2{
+    position: absolute;
+    z-index: 99999;
+    top: 15%;
+    left: 58%;
+    color: white;
+	font-family: 'Bebas Neue', cursive;
+    display: none;
+
+    background: linear-gradient(to right bottom,#ffffff, #d8d8d8 70%, #f7f7f7);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-size: 300% 300%;
+    
+    animation-name: change_gradient;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+}
+/* nick 설명 */
+
+/* june 설명 */
+#juneExplain{
+    position: absolute;
+    z-index: 99999;
+    top: 15%;
+    right: 24%;
+    font-size:2em;
+    font-family: 'Bebas Neue', cursive;
+    display: none;
+
+    background: linear-gradient(to right bottom,#C99335, #F0E7A2 70%, #C99335);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-size: 300% 300%;
+    
+    animation-name: change_gradient;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+}
+#juneExplainDetail{
+    position: absolute;
+    z-index: 99999;
+    top: 22%;
+    right: 41%;
+    color: white;
+	font-family: 'Bebas Neue', cursive;
+    display: none;
+
+    background: linear-gradient(to right bottom,#ffffff, #d8d8d8 70%, #f7f7f7);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-size: 300% 300%;
+    
+    animation-name: change_gradient;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+    
+}
+/* june 설명 */
+
+@keyframes change_gradient{
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
 
 @media screen and (max-width : 767px) {
     #indexPic{
         display: none;
     }
 }
+

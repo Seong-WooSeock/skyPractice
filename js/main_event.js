@@ -22,6 +22,13 @@ let clickMe = document.getElementById('clickMe');
 let mainPic = document.getElementById('mainPic');
 let exitEvent = document.getElementById('exitEvent');
 let allPoint = document.getElementsByClassName('mainEvent');
+let erickEx = document.getElementById('erickExplain');
+let nickEx = document.getElementById('nickExplain');
+let juneEx = document.getElementById('juneExplain');
+let erickExDe = document.getElementById('erickExplainDetail');
+let nickExDe = document.getElementById('nickExplainDetail');
+let nickExDe2 = document.getElementById('nickExplainDetail2');
+let juneExDe = document.getElementById('juneExplainDetail');
 // erick point------------------------
 erick.onclick = () => {
     erick.style.display = "none";
@@ -29,6 +36,8 @@ erick.onclick = () => {
     june.style.display = "none";
     mainPic.src = "../images/erickMain.jpg";
     exitEvent.style.display = "block"
+    erickEx.style.display = "block"
+    erickExDe.style.display = "block"
 }
 
 erick.onmousemove = () => {
@@ -45,8 +54,11 @@ nick.onclick = () => {
     erick.style.display = "none";
     nick.style.display = "none";
     june.style.display = "none";
-    mainPic.src = "../images/erickMain.jpg";
+    mainPic.src = "../images/nickMain.jpg";
     exitEvent.style.display = "block"
+    nickEx.style.display = "block"
+    nickExDe.style.display = "block"
+    nickExDe2.style.display = "block"
 }
 
 nick.onmousemove = () => {
@@ -64,8 +76,10 @@ june.onclick = () => {
     erick.style.display = "none";
     nick.style.display = "none";
     june.style.display = "none";
-    mainPic.src = "../images/erickMain.jpg";
+    mainPic.src = "../images/juneMain.jpg";
     exitEvent.style.display = "block"
+    juneEx.style.display = "block"
+    juneExDe.style.display = "block"
 }
 
 june.onmousemove = () => {
@@ -84,6 +98,14 @@ exitEvent.onclick = () => {
     erick.style.display = "block";
     nick.style.display = "block";
     june.style.display = "block";
+    erickEx.style.display = "none";
+    erickExDe.style.display = "none";
+    nickEx.style.display = "none";
+    nickExDe.style.display = "none";
+    nickExDe2.style.display = "none";
+    juneEx.style.display = "none";
+    juneExDe.style.display = "none";
+
     exitEvent.style.display = "none";
     mainPic.src = "../images/Main.jpg";
 }
