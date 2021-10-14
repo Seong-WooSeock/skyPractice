@@ -6,7 +6,9 @@ body{
 	background-attachment: fixed;
 	background-color: #0f0f0f;
 }
-
+a{
+	text-decoration: none;
+}
 body {
 	font: 14px;
 }

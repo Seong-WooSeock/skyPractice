@@ -1,19 +1,22 @@
-let trainerTabDetail = document.querySelectorAll('.trainerTabDetail');
-let trainerIntro = document.querySelectorAll('.trainerIntro');
-for (let i = 0; i < trainerTabDetail.length; i++){
-    for (let j = 0; j < trainerIntro.length; j++){
-        trainerTabDetail[i].addEventListener('click', () => {
-            if (j == i) {
-                trainerIntro[j].style.display = "block";
-                trainerTabDetail[j].style.background = "linear-gradient(to right bottom,white, #838383 50%, #ffffff)";
-                trainerTabDetail[j].style.color = "#191919";
-            } else {
-                trainerIntro[j].style.display = "none";
-                trainerTabDetail[j].style.background = "none";
-                trainerTabDetail[j].style.color = "white";
-            } 
-        });
-    }
+let tl = document.querySelectorAll('.TL');
+let ta = document.querySelectorAll('.TA');
+let focusTabLi = document.querySelector('.focusTabLi');
+let focusTab = document.querySelector('.focusTab');
+
+for (let i = 0; i < tl.length; i++){
+    tl[i].addEventListener('mouseover', () => {
+        tl[i].style.background = "linear-gradient(to right bottom,white, #3b3b3b 50%, #ffffff)";
+        tl[i].style.backgroundSize = "300% 300%";
+        ta[i].style.color = "#191919";
+        tl[i].style.animation = "change_trainer_text_gradient 2s infinite alternate";
+    });
+
+    tl[i].addEventListener('mouseout', () => {
+        focusTabLi.style.background = "linear-gradient(to right bottom,white, #838383 50%, #ffffff)";
+        focusTab.style.color = "#191919";
+        tl[i].style.background = "none";
+        ta[i].style.color = "white";
+    });
 }
 
 let nick = document.getElementById("nick");

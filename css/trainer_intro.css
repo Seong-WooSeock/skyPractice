@@ -19,6 +19,7 @@
     padding: 0;
 }
 
+
 #trainerTab ul li{
     padding: 5px 15px 4px 15px;
     text-align: center;
@@ -30,91 +31,25 @@
     font-family: 'Bebas Neue', cursive;
     font-size: 20px;
     cursor: pointer;
+    text-decoration: none;
 }
-#allT{
+ .TA {
+     width: 100%;
+     height: 100%;
+ }
+.focusTabLi{
     background: linear-gradient(to right bottom,white, #838383 50%, #ffffff);
+}
+
+.focusTab{
     color: #191919;
 }
-#nickT{
+.focusOutTabLi{
     background: none;
+}
+
+.focusOutTab{
     color: white;
-}
-#zinoT{
-    background: none;
-    color: white;
-}
-#juneT{
-    background: none;
-    color: white;
-}
-#erickT{
-    background: none;
-    color: white;
-}
-#yuneeT{
-    background: none;
-    color: white;
-}
-#allT:hover{ 
-    background: linear-gradient(to right bottom,white, #3b3b3b 50%, #ffffff);
-    background-size: 300% 300%;
-    color: #191919;
-
-    animation-name: change_trainer_text_gradient;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-direction:alternate;  
-}
-#nickT:hover{ 
-    background: linear-gradient(to right bottom,white, #3b3b3b 50%, #ffffff);
-    background-size: 300% 300%;
-    color: #191919;
-
-    animation-name: change_trainer_text_gradient;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-direction:alternate;  
-}
-#zinoT:hover{ 
-    background: linear-gradient(to right bottom,white, #3b3b3b 50%, #ffffff);
-    background-size: 300% 300%;
-    color: #191919;
-
-    animation-name: change_trainer_text_gradient;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-direction:alternate;  
-}
-#juneT:hover{ 
-    background: linear-gradient(to right bottom,white, #3b3b3b 50%, #ffffff);
-    background-size: 300% 300%;
-    color: #191919;
-
-    animation-name: change_trainer_text_gradient;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-direction:alternate;  
-}
-#erickT:hover{
-    background: linear-gradient(to right bottom,white, #3b3b3b 50%, #ffffff);
-    background-size: 300% 300%;
-    color: #191919;
-
-    animation-name: change_trainer_text_gradient;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-direction:alternate;  
-}
-
-#yuneeT:hover{
-    background: linear-gradient(to right bottom,white, #3b3b3b 50%, #ffffff);
-    background-size: 300% 300%;
-    color: #191919;
-
-    animation-name: change_trainer_text_gradient;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-direction:alternate;  
 }
 
 #introduceBox{
@@ -149,24 +84,12 @@ h2{
 #allTrainer{
     display: block;
 }
-#trainerNick{
-    display: none;
-}
-#trainerZino{
-    display: none;
-}
-#trainerJune{
-    display: none;
-}
-#trainerErick{
-    display: none;
-}
-#trainerYunee{
-    display: none;
-}
 
+.trainerIntro{
+    text-align: center;
+}
 .ptBA img{
-    width: 100%;
+    width: 95%;
     padding-top: 20px;
 }
 
