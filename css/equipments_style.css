@@ -1,5 +1,4 @@
 #floorPlan{
-    padding-top: 110px;
     text-align: center;
 }
 #floorPlanImg{
@@ -13,6 +12,13 @@
 .eq_use_list{
     color: wheat;
 }
+.banner_text{
+    left: 38%;
+}
+
+.menu_banner{
+    background: center/80% url("/images/equipmentsBanner.jpg");;
+}
 
 @media screen and (max-width: 320px){
     #floorPlanImg{
@@ -20,4 +26,12 @@
         width: 300px;
     }
 
+}
+@keyframes change_banner_text{
+    0% {
+        left: 2%;
+    }
+    100% {
+        left: 38%;
+    }
 }

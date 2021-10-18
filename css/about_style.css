@@ -1,0 +1,30 @@
+.menu_banner{
+    height: 500px;
+    background:center/100% url("/images/aboutPic.jpg");
+}
+
+.banner_text{
+    font-size: 5em;
+    top: 40%;
+    left: 40%;
+}
+
+@keyframes change_banner_text{
+    0% {
+        left: 2%;
+    }
+    100% {
+        left: 40%;
+    }
+}
+
+
+.aboutUs{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: white;
+    opacity: 0.7;
+    background-color: #191919;
+    padding: 10px;
+    text-align: center;
+}

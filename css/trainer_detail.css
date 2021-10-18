@@ -1,0 +1,13 @@
+.banner_text{
+    left: 40%;
+}
+
+@keyframes change_banner_text{
+    0% {
+        left: 2%;
+    }
+    100% {
+        left: 40%;
+    }
+}
+

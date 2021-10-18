@@ -1,22 +1,31 @@
 let tl = document.querySelectorAll('.TL');
 let ta = document.querySelectorAll('.TA');
-let focusTabLi = document.querySelector('.focusTabLi');
+
 let focusTab = document.querySelector('.focusTab');
+
+
+for (let i = 0; i < tl.length; i++){
+    tl[i].style.borderTop = '0px';
+    tl[i].style.borderBottom = '0px';
+    tl[i].style.borderLeft = '0px';
+    tl[i].style.borderRight = '1px solid white';
+    if (i == 5) {
+        tl[i].style.borderTop = '0px';
+        tl[i].style.borderBottom = '0px';
+        tl[i].style.borderLeft = '0px';
+        tl[i].style.borderRight = '0px';
+    } 
+}
+
 
 for (let i = 0; i < tl.length; i++){
     tl[i].addEventListener('mouseover', () => {
-        tl[i].style.background = "linear-gradient(to right bottom,white, #3b3b3b 50%, #ffffff)";
-        tl[i].style.backgroundSize = "300% 300%";
-        ta[i].style.color = "#191919";
-        tl[i].style.animation = "change_trainer_text_gradient 2s infinite alternate";
-    });
-
-    tl[i].addEventListener('mouseout', () => {
-        focusTabLi.style.background = "linear-gradient(to right bottom,white, #838383 50%, #ffffff)";
-        focusTab.style.color = "#191919";
-        tl[i].style.background = "none";
-        ta[i].style.color = "white";
-    });
+        ta[i].style.fontWeight = "900";
+        tl[i].addEventListener('mouseout', () => {
+            ta[i].style.fontWeight = "100";
+            focusTab.style.fontWeight = "900";
+        });
+    });  
 }
 
 let nick = document.getElementById("nick");
