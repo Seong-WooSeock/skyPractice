@@ -1,0 +1,171 @@
+.content{
+    width: 100%;
+    height: 500px;
+    display: flex;
+}
+.banner_container{
+    width: 50%;
+    padding-top:110px;
+}
+
+.menu_banner{
+    margin-top: 40px;
+    width: 100%;
+    height: 400px;
+}
+
+.banner_text{
+    top: 38%;
+    left: 44%;
+    z-index: 888;
+    animation: change_banner_text 1 2.5s backwards;
+}
+
+
+@keyframes change_banner_text{
+    0% {
+        top: 0%;
+    }
+    100% {
+        top: 38%;
+    }
+}
+
+#login_box{
+    padding-top: 150px;
+    width: 50%;
+}
+
+#login{
+    width: 100%;
+    height: 400px;
+    background-color: #191919;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+}
+.sign_in_btn{
+    padding-top: 20px;
+    text-align: center;
+}
+
+.user_IDPW{
+  text-align: center;
+  padding-right: 40px;
+}
+
+.input_IDPW{
+    color: #ebebeb;
+    background: none;
+    position: relative;
+    box-sizing: border-box;
+    border-width: 0px 0px 2px;
+    border-style: solid;
+    border-color: #ebebeb;
+    padding: 11px 95px 8px 0px;
+    width: 300px;
+    height: 48px;
+}
+
+
+.check_box{
+    text-align: center;
+    padding: 20px 218px 0 0;
+    font-size: 13px;
+    cursor: pointer;
+}
+.item_cb{
+    display: none!important;
+}
+.check_on ~ .check_off {
+    display: none;
+}
+
+.item_cb:checked + .check_on {
+    display: none;
+}
+.item_cb:checked + .check_on ~ .check_off {
+    display: inline-block;
+}
+
+.login_btn{
+    padding-right: 40px;
+    text-align: center;
+}
+#loginSubmit{
+    width: 300px;
+    height: 48px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+}
+.login_abox{
+    text-align: center;
+    text-decoration: none;
+    color: #ebebeb;
+    font-size: 13px;
+
+}
+.sns_loginContainer{
+    text-align: center;
+}
+.sns_textBox{
+    text-align: center;
+    padding-top: 25px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+}
+.sns_textSize{
+     color: #ebebeb;
+    font-size: 20px;
+    font-weight: bold;
+}
+.sns_loginBox{
+    text-align: center;
+    padding-right: 40px;
+}
+/* ==================출처 29cm======================== */
+.sns_login{
+    width: 50px;
+    height: 50px;
+    background: url(https://img.29cm.co.kr/next29cm/myedit_sns_icon_mo.png) no-repeat;
+    background-size: 203px 99px;
+    border-radius: 10px;
+    border: 1px solid #191919;
+    cursor: pointer;
+}
+
+#naverIdLogin{
+    background-position: -1px -52px;
+}
+
+#kakaoIdLogin{
+    background-position: -52px -52px;
+}
+
+#facebookIdLogin{
+    background-position: -104px -52px;
+}
+
+#appleIdLogin{
+    background-position: -158px -52px;
+}
+ 
+/* ==================출처 29cm======================== */
+
+.sns_loginText{
+    display: none;
+}
+
+#join_us{
+    padding-right: 100px;
+    color: #ebebeb;
+}
+#find_IDPW{
+    padding-right: 40px;
+    color: #ebebeb;
+}
+
+footer{
+    margin-top: 100px;
+}

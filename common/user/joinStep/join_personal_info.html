@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>SKY365</title>
+    <link href="../../../css/join_progress_style.css" rel="stylesheet" type="text/css">
+    <link href="../../../css/style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="../../../images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <!-- sky365에 피트니스 외 골프와 필라테스 페이지 이동 아이콘, 센터 지도 및 로그인 구축, 필요시 사이트맵 핸들링 -->
+        <div id="PT_Consulting">
+            <a href="../../otherFunction/sky365Pilates.html" class="pilates"><img id="pilatesLogo"
+                    src="../../../images/pliatesLogo.png" alt="pliateslogo" width="21px" height="21px"><span
+                    id="pilatesText">pilates</span></a>
+            <a href="../../otherFunction/sky365Golf.html" class="golf"><img id="golfLogo"
+                    src="../../../images/golflogo.png" alt="골프로고" width="21px" height="21px"><span
+                    id="golfText">golf</span></a>
+            <a href="#" id="centerMap">find a center <img src="../../../images/findlogo.png" alt="돋보기" width="16px"
+                    height="16px"></a>
+            <a href="../../user/userLogin.html" id="loginBtn">sign-in</a>
+
+        </div>
+        <!-- 헤더 (반응형 웹 구축 , 마우스 휠을 내릴경우 헤더의 height가 낮아지는 기능 구축) -->
+        <header>
+            <nav class="navi" id="navi">
+                <a id="logo" href="../../index.html"><img id="logoImg" src="../../../images/goldlogo.png"
+                        alt="금색 로고"></a>
+                <img id="headerMenuToggleImg" src="../../../images/menuList.png" alt="메뉴리스트">
+                <div id="headerMenuToggle"></div>
+                <ul id="menuLists">
+                    <li><a href="../../menu/trainerIntroduce.html">Trainer</a></li>
+                    <li><a href="../../menu/trainingEquipment.html">Equipments</a></li>
+                    <li><a href="../../menu/photo.html">Photo</a></li>
+                    <li><a href="../../menu/event.html">Event</a></li>
+                    <li><a href="../../menu/about.html">About</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="content">
+            <div class="join_box">
+                <form action="join_personal_info.html" id="join">
+                    <div class="join_step">
+                        <span class="progress_box completed"></span>
+                        <span class="progress_box proceeding">
+                            <i class="fas fa-dumbbell"></i></span>
+                        <span class="progress_box incomplete"></span>
+                        <span class="progress_box incomplete"></span>
+                    </div>
+                    <div class="join_row">
+                        <h3 class="join_title" id="title_pd">
+                            <label for="">회원가입을 위해 <br> 개인정보를 입력해 주세요.</label>
+                        </h3>
+                        <div class="info_box">
+                            <input type="text" maxlength="6" class="name_input" placeholder="이름">
+                            <div class="message_box">
+                                <span class="not_null">필수 입력값입니다!</span>
+                                <span class="input_guide">공백없이 입력해주세요 ex)홍길동, 김빛나라</span>
+                                <span class="error_num">한글로 입력해주세요!</span>
+                            </div>
+                            <div class="birth_box">
+                                <div>
+                                    <input placeholder="생년월일" oninput="maxLengthCheck(this)" class="birth_year"
+                                        type="number" maxlength="4">
+                                    <span class="ymd">년</span>
+                                    <select class="birth_month">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                    </select> <span class="ymd">월</span>
+                                    <select class="birth_date">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                    </select> <span class="ymd">일</span>
+                                </div>
+                                <div class="message_box">
+                                    <span class="not_null">필수 입력값입니다!</span>
+                                </div>
+                            </div>
+                            <div class="gender_box">
+                                <select class="gender">
+                                    <option value="0">성별</option>
+                                    <option value="1">남성</option>
+                                    <option value="2">여성</option>
+                                </select>
+                            </div>
+                            <div class="message_box">
+                                <span class="error_num">인증번호 입력 오류</span>
+                            </div>
+                        </div>
+                        <div class="confirm_btn">
+                            <button class="next_btn">다음</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- footer 추후 수정 -->
+    <footer>
+        <address>
+            <p>부산광역시 금정구 온천장 홈플러스 23층</p>
+            <p>woo_seock@naver.com</p>
+        </address>
+        <p> Copyright ⓒ. All rights reserved.</p>
+    </footer>
+    <!-- 스크립트 연결 -->
+    <script src="../../../js/join_info_event.js"></script>
+    <script src="../../../js/main.js"></script>
+    <script src="https://kit.fontawesome.com/c3df4d7d1c.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

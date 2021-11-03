@@ -1,0 +1,174 @@
+.content{
+    width: 100%;
+    height: 500px;
+    display: flex;
+}
+hr{
+    line-height: 1px;
+}
+.banner_container{
+    width: 50%;
+    padding-top:110px;
+}
+
+.menu_banner{
+    margin-top: 40px;
+    width: 100%;
+    height: 400px;
+}
+
+.banner_text{
+    top: 38%;
+    left: 44%;
+    z-index: 888;
+    animation: change_banner_text 1 2.5s backwards;
+}
+
+
+@keyframes change_banner_text{
+    0% {
+        top: 0%;
+    }
+    100% {
+        top: 38%;
+    }
+}
+
+.join_box{
+    padding-top: 150px;
+    width: 50%;
+}
+
+#join{
+    width: 100%;
+    height: 400px;
+    background-color: #191919;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#join_content{
+    width: 100%;
+    text-align: center;
+    color: #bdbdbd;
+}
+
+.join_title{
+    padding: 30px 0;
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.title_ex{
+    padding: 30px 0 0;
+    margin: 0;
+    font-size: 2em;
+}
+
+.idCheck_false{
+    display: none;
+}
+.text_required{
+    display: none;
+}
+
+.join_step{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.progress_box{
+    border-radius: 50%;
+    border: 3px solid #bdbdbd;
+    margin: 0px 3px;
+}
+.proceeding{
+    background-color: none;
+    padding: 0 1px 1px;
+}
+.incomplete{
+    background-color: none;
+    padding: 0px 10px;
+}
+.completed{
+    background-color: #bdbdbd;
+    padding: 0px 10px;
+}
+
+.agreement_select{
+    text-align: left;
+    padding-top: 10px;
+}
+.all_select{
+    padding-left: 10px;
+    font-size: 1.2em;
+}
+
+
+.all_checkbox{
+    display: none!important;
+}
+
+.all_check_on ~ .all_check_off {
+    display: none;
+}
+
+.all_checkbox:checked + .all_check_on {
+    display: none;
+}
+.all_checkbox:checked + .all_check_on ~ .all_check_off {
+    display: inline-block;
+}
+
+.select_btnBox{
+    list-style: none;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.each_checkbox{
+    display: none!important;
+}
+
+.check_off ~ .check_on {
+    display: none;
+}
+.each_checkbox:checked + .check_off {
+    display: none;
+}
+.each_checkbox:checked + .check_off ~ .check_on {
+    display: inline-block;
+}
+
+
+
+.cursor_pointer{
+    cursor: pointer;
+}
+.detail_agrmt{
+    color: #cfcece;
+    font-size: 0.8em;
+}
+
+.btnBox{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.btnBox button{
+    width: 45%;
+    height: 60px;
+    background:none;
+    border: 3px solid #cfcece;
+    color: #cfcece;
+    font-size: 1.25em;
+}
+.goBtn{
+    display: none;
+}
+
+
+footer{
+    margin-top: 100px;
+}

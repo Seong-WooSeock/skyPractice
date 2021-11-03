@@ -1,0 +1,267 @@
+.content{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.join_box{
+    padding-top: 150px;
+    text-align: center;
+}
+
+#join{
+    width: 450px;
+    height: 400px;
+    background-color: #191919;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#join_content{
+    text-align: center;
+    color: #bdbdbd;
+}
+
+.join_title{
+    padding: 30px 0;
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.join_step{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.progress_box{
+    border-radius: 50%;
+    border: 3px solid #bdbdbd;
+    margin: 0px 3px;
+}
+.proceeding{
+    background-color: none;
+    padding: 0 1px 1px;
+}
+.incomplete{
+    background-color: none;
+    padding: 0px 10px;
+}
+.completed{
+    background-color: #bdbdbd;
+    padding: 0px 10px;
+}
+.phone_box{
+    position: relative;
+}
+.phone_input{
+    color: #ebebeb;
+    background: none;
+    position: relative;
+    box-sizing: border-box;
+    border-width: 0px 0px 2px;
+    border-style: solid;
+    border-color: #ebebeb;
+    width: 300px;
+    height: 48px;
+    font-size: 1em;
+    padding-left: 60px;
+}
+
+.select_box{
+    position: absolute;
+    top: 3px;
+    left: 77px;
+}
+
+.phone_selectbox{
+    width: 50px;
+    height: 38px;
+    background: none;
+    color: #ebebeb;
+    border-radius: 20px;
+    border: 1px solid #ebebeb; 
+}
+
+.certification_btnBox{
+    position: absolute;
+    top: 3px;
+    right: 77px;
+}
+.certification_btn{
+    width: 80px;
+    height: 38px;
+    background: none;
+    color: #ebebeb;
+    border-radius: 20px;
+    border: 1px solid #ebebeb;   
+}
+
+.recertification_btn{
+    width: 80px;
+    height: 38px;
+    background: none;
+    color: #ebebeb;
+    border-radius: 20px;
+    border: 0.5px solid #ebebeb;
+    display: none;
+}
+
+.confirm_btn{
+    padding-top: 20px;
+    display: none;
+}
+
+.message_box{
+    text-align: left;
+    padding-left: 77px;
+}
+.not_null{
+    display: none;
+    color: red;
+    font-size: 0.45em;
+}
+.not_hyphen{
+    display: none;
+    color: #ebebeb;
+    font-size: 0.45em;
+}
+.error_num{
+    display: none;
+    color: red;
+    font-size: 0.45em;
+}
+.input_guide{
+    display: none;
+    color: #ebebeb;
+    font-size: 0.45em;
+}
+.certification_number_box{
+    position: relative;
+    display: none;
+}
+.certification_number{
+    color: #ebebeb;
+    background: none;
+    position: relative;
+    box-sizing: border-box;
+    border-width: 0px 0px 2px;
+    border-style: solid;
+    border-color: #ebebeb;
+    width: 300px;
+    height: 48px;
+    font-size: 1em;
+}
+.countDown{    
+    display: none;
+    color: red;
+    font-size: 0.7em;
+    position: absolute;
+    top: 20px;
+    right: 80px;
+}
+
+input[type = number]::-webkit-outer-spin-button,
+input[type = number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.next_btn{
+    width: 300px;
+    height: 60px;
+    background:none;
+    border: 3px solid #cfcece;
+    color: #cfcece;
+    font-size: 1.25em;
+}
+.deleteBox{
+    background-color: #191919;
+    color: #ebebeb;
+    font-size: 14px;
+}
+
+/*===========개인정보===========================*/
+#title_pd{
+    padding-bottom: 10px;
+}
+.info_box{
+    position: relative;
+}
+
+.name_input{
+    color: #ebebeb;
+    background: none;
+    position: relative;
+    box-sizing: border-box;
+    border-width: 0px 0px 2px;
+    border-style: solid;
+    border-color: #ebebeb;
+    width: 300px;
+    height: 38px;
+    font-size: 1em;
+}
+
+.birth_box{
+    padding-top: 10px;
+}
+.birth_year{
+    color: #ebebeb;
+    background: none;
+    position: relative;
+    box-sizing: border-box;
+    border-width: 0px 0px 2px;
+    border-style: solid;
+    border-color: #ebebeb;
+    width: 95px;
+    height: 38px;
+}
+.birth_month{
+    text-align: center;
+    font-size: 1em;
+    color: #ebebeb;
+    background: none;
+    position: relative;
+    box-sizing: border-box;
+    border-width: 0px 0px 2px;
+    border-style: solid;
+    border-color: #ebebeb;
+    width: 60px;
+    height: 38px;
+}
+
+.birth_date{
+    text-align: center;
+    font-size: 1em;
+    color: #ebebeb;
+    background: none;
+    position: relative;
+    box-sizing: border-box;
+    border-width: 0px 0px 2px;
+    border-style: solid;
+    border-color: #ebebeb;
+    width: 60px;
+    height: 38px;
+}
+.ymd{
+    margin-top: 20px;
+    
+}
+.gender_box{
+    padding-top: 10px;
+}
+.gender{
+    color: #ebebeb;
+    text-align: center;
+    background: none;
+    position: relative;
+    box-sizing: border-box;
+    border-width: 0px 0px 2px;
+    border-style: solid;
+    border-color: #ebebeb;
+    width: 300px;
+    height: 38px;
+    font-size: 1em;
+}
+footer{
+    margin-top: 100px;
+}

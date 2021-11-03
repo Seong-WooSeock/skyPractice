@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>SKY365</title>
     <link href="../../css/style.css" rel="stylesheet" type="text/css">
+    <link href="../../css/login.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,23 +47,69 @@
                     <li><a href="../menu/trainerIntroduce.html">Trainer</a></li>
                     <li><a href="../menu/trainingEquipment.html">Equipments</a></li>
                     <li><a href="../menu/photo.html">Photo</a></li>
-                    <li><a href="../menu/trainingEvent.html">Event</a></li>
+                    <li><a href="../menu/event.html">Event</a></li>
                     <li><a href="../menu/about.html">About</a></li>
                 </ul>
             </nav>
         </header>
         <div class="content">
-            <form action="" id="delete" method="get">
-                <div class="userIDPW">
-                    <label for="login_id">아이디: <input type="text" name="login_id" id="login_id"
-                            placeholder="아이디"></label>
+            <div class="banner_container">
+                <div class="menu_banner">
+                    <span class="banner_text">Login</span>
                 </div>
-                <div class="userIDPW">
-                    <label for="login_password">비밀번호: <input type="password" name="login_password" placeholder="비밀번호"
-                            id="login_password"></label>
-                </div>
-                <input id="loginSubmit" type="submit" value="sign-in" id="">
-            </form>
+            </div>
+            <div id="login_box">
+                <form action="" id="login" method="get">
+                    <div class="sign_in_btn">
+                        <div class="user_IDPW">
+                            <label for="login_id">
+                                <input class="input_IDPW" type="text" name="login_id" id="login_id"
+                                    placeholder="아이디"></label>
+                        </div>
+                        <div class="user_IDPW">
+                            <label for="login_password">
+                                <input class="input_IDPW" type="password" name="login_password" placeholder="비밀번호"
+                                    id="login_password"></label>
+                        </div>
+                        <div class="check_box">
+                            <input type="checkbox" name="" class="item_cb" id="check">
+                            <label class="check_on" for="check">
+                                <i class="far fa-check-circle"></i>
+                            </label>
+                            <label class="check_off" for="check">
+                                <i class="fas fa-check-circle"></i>
+                            </label>
+                            <label for="check">아이디 기억하기</label>
+                        </div>
+                        <div class="login_btn">
+                            <input id="loginSubmit" type="submit" value="sign-in" id="">
+                        </div>
+                        <div class="login_abox">
+                            <a href="./joinStep/userJoin.html" id="join_us">회원가입</a>
+                            <a href="userFindPassward.html" id="find_IDPW">아이디/비밀번호 찾기</a>
+                        </div>
+                        <div class="sns_loginContainer">
+                            <div class="sns_textBox">
+                                <span class="sns_textBox">SNS 계정으로 로그인하기</span>
+                            </div>
+                            <div class="sns_loginBox">
+                                <button id="naverIdLogin" class="sns_login" type="button">
+                                    <span class="sns_loginText">네이버로 로그인하기</span>
+                                </button>
+                                <button id="kakaoIdLogin" class="sns_login" type="button">
+                                    <span class="sns_loginText">카카오로 로그인하기</span>
+                                </button>
+                                <button id="facebookIdLogin" class="sns_login" type="button">
+                                    <span class="sns_loginText">페이스북으로 로그인하기</span>
+                                </button>
+                                <button id="appleIdLogin" class="sns_login" type="button">
+                                    <span class="sns_loginText">Apple로 로그인하기</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
         <!-- footer 추후 수정 -->
         <footer>
@@ -73,7 +120,10 @@
             <p> Copyright ⓒ. All rights reserved.</p>
         </footer>
         <!-- 스크립트 연결 -->
+        <script src="../../js/login_event.js"></script>
         <script src="../../js/main.js"></script>
+        <script src="https://kit.fontawesome.com/c3df4d7d1c.js" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
