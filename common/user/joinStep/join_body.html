@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>SKY365</title>
+    <link href="../../../css/join_progress_style.css" rel="stylesheet" type="text/css">
+    <link href="../../../css/style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="../../../images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <!-- sky365에 피트니스 외 골프와 필라테스 페이지 이동 아이콘, 센터 지도 및 로그인 구축, 필요시 사이트맵 핸들링 -->
+        <div id="PT_Consulting">
+            <a href="../../otherFunction/sky365Pilates.html" class="pilates"><img id="pilatesLogo"
+                    src="../../../images/pliatesLogo.png" alt="pliateslogo" width="21px" height="21px"><span
+                    id="pilatesText">pilates</span></a>
+            <a href="../../otherFunction/sky365Golf.html" class="golf"><img id="golfLogo"
+                    src="../../../images/golflogo.png" alt="골프로고" width="21px" height="21px"><span
+                    id="golfText">golf</span></a>
+            <a href="#" id="centerMap">find a center <img src="../../../images/findlogo.png" alt="돋보기" width="16px"
+                    height="16px"></a>
+            <a href="../../user/userLogin.html" id="loginBtn">sign-in</a>
+
+        </div>
+        <!-- 헤더 (반응형 웹 구축 , 마우스 휠을 내릴경우 헤더의 height가 낮아지는 기능 구축) -->
+        <header>
+            <nav class="navi" id="navi">
+                <a id="logo" href="../../index.html"><img id="logoImg" src="../../../images/goldlogo.png"
+                        alt="금색 로고"></a>
+                <img id="headerMenuToggleImg" src="../../../images/menuList.png" alt="메뉴리스트">
+                <div id="headerMenuToggle"></div>
+                <ul id="menuLists">
+                    <li><a href="../../menu/trainerIntroduce.html">Trainer</a></li>
+                    <li><a href="../../menu/trainingEquipment.html">Equipments</a></li>
+                    <li><a href="../../menu/photo.html">Photo</a></li>
+                    <li><a href="../../menu/event.html">Event</a></li>
+                    <li><a href="../../menu/about.html">About</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="content">
+            <div class="join_box">
+                <form action="join_personal_info.html" id="join">
+                    <div class="join_step" id="idpw_pd_bt">
+                        <span class="progress_box completed"></span>
+                        <span class="progress_box completed"></span>
+                        <span class="progress_box completed"></span>
+                        <span class="progress_box proceeding">
+                            <i class="fas fa-dumbbell"></i></span>
+                    </div>
+                    <div class="join_row">
+                        <h3 class="join_title">
+                            <label for="">체형 분석을 위해 <br> 키와 몸무게를 입력해 주세요.</label>
+                        </h3>
+                        <div class="info_box">
+                            <div class="height_box">
+                                <input type="number" placeholder="키" class="height_input" maxlength="3">
+                                <div class="height_unit_box">
+                                    <span class="height_unit">CM</span>
+                                </div>
+                                <div class="message_box">
+                                    <span class="not_null">필수 입력값입니다!</span>
+                                    <span class="input_guide">소숫점을 제외한 키를 입력해주세요</span>
+                                    <span class="error_num">키 입력 오류.</span>
+                                </div>
+                            </div>
+
+                            <div class="weight_box">
+                                <input type="number" placeholder="몸무게" class="weight_input" maxlength="3">
+                                <div class="weight_unit_box">
+                                    <span class="weight_unit">KG</span>
+                                </div>
+                                <div class="message_box">
+                                    <span class="not_null">필수 입력값입니다!</span>
+                                    <span class="input_guide">소숫점을 제외한 몸무게를 입력해주세요</span>
+                                    <span class="error_num">몸무게 입력 오류</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="confirm_btn">
+                            <button class="next_btn">회원가입 완료</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- footer 추후 수정 -->
+    <footer>
+        <address>
+            <p>부산광역시 금정구 온천장 홈플러스 23층</p>
+            <p>woo_seock@naver.com</p>
+        </address>
+        <p> Copyright ⓒ. All rights reserved.</p>
+    </footer>
+    <!-- 스크립트 연결 -->
+    <script src="../../../js/join_idpw_event.js"></script>
+    <script src="../../../js/main.js"></script>
+    <script src="https://kit.fontawesome.com/c3df4d7d1c.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

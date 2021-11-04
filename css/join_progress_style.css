@@ -95,6 +95,7 @@
     color: #ebebeb;
     border-radius: 20px;
     border: 1px solid #ebebeb;   
+    cursor: pointer;  
 }
 
 .recertification_btn{
@@ -105,12 +106,13 @@
     border-radius: 20px;
     border: 0.5px solid #ebebeb;
     display: none;
+    cursor: pointer;  
 }
 
 .confirm_btn{
     padding-top: 20px;
     display: none;
-}
+}   
 
 .message_box{
     text-align: left;
@@ -173,6 +175,7 @@ input[type = number]::-webkit-inner-spin-button {
     border: 3px solid #cfcece;
     color: #cfcece;
     font-size: 1.25em;
+    cursor: pointer;  
 }
 .deleteBox{
     background-color: #191919;
@@ -262,6 +265,104 @@ input[type = number]::-webkit-inner-spin-button {
     height: 38px;
     font-size: 1em;
 }
+
+
+/*===========id/pw===========================*/
+#join_idpw{
+    width: 450px;
+    height: 450px;
+    background-color: #191919;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.id_input, .pw_input, .repw_input{
+    color: #ebebeb;
+    background: none;
+    position: relative;
+    box-sizing: border-box;
+    border-width: 0px 0px 2px;
+    border-style: solid;
+    border-color: #ebebeb;
+    width: 300px;
+    height: 38px;
+    font-size: 1em;
+}
+
+.id_box, .pw_box{
+    padding-bottom: 4px;
+    position: relative;
+}
+
+.id_btn_box{
+    position: absolute;
+    top: 2px;
+    right: 77px;
+}
+.id_btn{
+    width: 80px;
+    height: 30px;
+    background: none;
+    color: #ebebeb;
+    border-radius: 20px;
+    border: 1px solid #ebebeb; 
+    cursor: pointer;  
+}
+.not_overlap{
+    display: none;
+    color: #168116;
+    font-size: 0.45em;
+    margin-bottom: 0;
+}
+
+.height_unit_box, .weight_unit_box{
+    position: absolute;
+    top: 2px;
+    right: 77px;
+}
+.height_unit, .height_unit{
+    width: 80px;
+    height: 30px;
+    background: none;
+    color: #ebebeb;
+    cursor: pointer;  
+}
+
+.good_pw{
+    display: none;
+    color: #168116;
+    font-size: 0.45em;
+    margin:0;
+    padding: 0;
+}
+
+
+/*===========키 몸무게==========================*/
+.height_input, .weight_input{
+    color: #ebebeb;
+    background: none;
+    position: relative;
+    box-sizing: border-box;
+    border-width: 0px 0px 2px;
+    border-style: solid;
+    border-color: #ebebeb;
+    width: 300px;
+    height: 38px;
+    font-size: 1em;
+}
+
+
+.height_box, .weight_box{
+    padding-bottom: 4px;
+    position: relative;
+}
+
+.height_input::-webkit-outer-spin-button, .weight_input::-webkit-outer-spin-button,
+.height_input::-webkit-inner-spin-button, .weight_input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
 footer{
-    margin-top: 100px;
+    margin-top: 110px;
 }
