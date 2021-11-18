@@ -20,12 +20,6 @@ window.addEventListener('resize', () => {
             menuLists.style.display = "flex";
         }
 
-        headerMenuToggleImg.onclick = () => {
-            headerMenuToggle.style.display = "block";
-                menuLists.style.display = "flex";
-        }
-
-
         headerMenuToggle.onmouseout = () => {
             menuLists.onmouseover = () => {
                 headerMenuToggle.style.display = "block";
