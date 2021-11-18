@@ -1,31 +1,95 @@
+
 #floorPlan{
+    position: relative;
     text-align: center;
 }
 #floorPlanImg{
     padding: 20px 0;
-    width: 600px;
+    width: 87%;
 }
+
+.video_box{
+    width: 509px;
+    height: 211px;
+    position: absolute;
+    background-color: white;
+    text-align: left;
+    display: none;
+}
+
+.training_video video{
+    width: 376px;
+    cursor: pointer;
+}
+#back_btn{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px 20px 10px 20px;
+    background-color: white;
+    border: 2px solid #191919;
+    color: #191919;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 20px;
+}
+
 .eq_use{
     text-align: center;
+    position: relative;
 }
 
 .eq_use_list{
     color: wheat;
+    list-style: none;
 }
-.banner_text{
-    left: 38%;
+
+.pointer{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #090909;
+    z-index: 999;
+}
+
+.thumbnail{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.pointer:hover{
+    width: 16px;
+    height: 16px;
+}
+#leg_extension{
+    top: 24%;
+    left: 12%;
+}
+.training_box{
+    width: 94%;
+    height: 20%;
+    border: 1px solid white;
+    display: flex;
+}
+#leg_curl{
+    top: 24%;
+    left: 17.5%;
+}
+
+#leg_press{
+    top: 39%;
+    left: 14.5%;
 }
 
 .menu_banner{
     background: center/80% url("/images/equipmentsBanner.jpg");;
 }
 
-@media screen and (max-width: 320px){
-    #floorPlanImg{
-        padding: 20px 0;
-        width: 300px;
-    }
 
+.banner_text{
+    left: 38%;
 }
 @keyframes change_banner_text{
     0% {
@@ -33,5 +97,84 @@
     }
     100% {
         left: 38%;
+    }
+}
+
+@media screen and (max-width: 769px){
+    .banner_text{
+        left: 33%;
+    }
+    
+    @keyframes change_banner_text{
+        0% {
+            left: 2%;
+        }
+        100% {
+            left: 33%;
+        }
+    }
+}
+@media screen and (max-width: 426px){
+
+    .video_box{
+        width: 370px;
+        height: 129px;
+    }
+
+    .training_video video{
+        width: 230px;
+    }
+    #back_btn{
+        font-size: 17px;
+    }
+    .banner_text{
+        left: 29%;
+        font-size: 2.5em;
+    }
+    .eq_use_list{
+        padding-left: 10px;
+        width: 100%;
+    }
+
+    @keyframes change_banner_text{
+        0% {
+            left: 2%;
+        }
+        100% {
+            left: 29%;
+        }
+    }
+
+}
+@media screen and (max-width: 376px){
+    .video_box{
+        width: 320px;
+        height: 110px;
+    }
+
+    .training_video video{
+        width: 200px;
+    }
+    #back_btn{
+        font-size: 14px;
+    }
+
+    .eq_use_list{
+        padding-left: 10px;
+        width: 100%;
+    }
+    .banner_text{
+        left: 28%;
+        font-size: 2em;
+    }
+
+    
+    @keyframes change_banner_text{
+        0% {
+            left: 2%;
+        }
+        100% {
+            left: 28%;
+        }
     }
 }

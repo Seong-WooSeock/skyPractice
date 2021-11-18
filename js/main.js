@@ -19,6 +19,13 @@ window.addEventListener('resize', () => {
             headerMenuToggle.style.display = "block";
             menuLists.style.display = "flex";
         }
+
+        headerMenuToggleImg.onclick = () => {
+            headerMenuToggle.style.display = "block";
+                menuLists.style.display = "flex";
+        }
+
+
         headerMenuToggle.onmouseout = () => {
             menuLists.onmouseover = () => {
                 headerMenuToggle.style.display = "block";
@@ -33,8 +40,6 @@ window.addEventListener('resize', () => {
         menuLists.style.display = "none";
     }
 });
-
-
 // --------------헤더박스 반응형 웹 구축 끝-------------------
 
 // -------------헤더 박스 스크롤시 높이 조정------------------------

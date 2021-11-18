@@ -1,5 +1,5 @@
 .banner_text{
-    left: 40%;
+    left: 37%;
 }
 
 @keyframes change_banner_text{
@@ -7,7 +7,51 @@
         left: 2%;
     }
     100% {
-        left: 40%;
+        left: 37%;
     }
 }
 
+@media screen and (max-width: 769px){
+    .banner_text{
+        left: 33%;
+    }
+    
+    @keyframes change_banner_text{
+        0% {
+            left: 2%;
+        }
+        100% {
+            left: 33%;
+        }
+    }
+}
+@media screen and (max-width: 426px){
+    .banner_text{
+        left: 29%;
+        font-size: 2.5em;
+    }
+    
+    @keyframes change_banner_text{
+        0% {
+            left: 2%;
+        }
+        100% {
+            left: 29%;
+        }
+    }
+}
+@media screen and (max-width: 376px){
+    .banner_text{
+        left: 28%;
+        font-size: 2em;
+    }
+    
+    @keyframes change_banner_text{
+        0% {
+            left: 2%;
+        }
+        100% {
+            left: 28%;
+        }
+    }
+}

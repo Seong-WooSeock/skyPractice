@@ -62,29 +62,55 @@
             기구에 대한 설명을 동영상으로 갈수 있도록-->
             <div id="floorPlan">
                 <img id="floorPlanImg" src="../../images/floorPlan.jpg" alt="floorPlan">
+                <a href="#leg_extension_explain"><span class="pointer" id="leg_extension"></span></a>
+                <a href="#leg_curl_explain"><span class="pointer" id="leg_curl"></span></a>
+                <a href="#leg_press_explain"><span class="pointer" id="leg_press"></span></a>
             </div>
             <div class="eq_use">
-                <p id="deleteTag" style="color: white;">설명: 상단의 평면도에 있는 기구를 클릭하면 밑에 리스트<br>
-                    사용 동영상과 설명이 들어있는곳으로 이동한다<br>
-                    (구현후 삭제)
-
-                </p>
+                <div class="video_box">
+                    <div class="training_video"><video controls src="../../video/training.mp4"></video></div>
+                    <button id="back_btn">목록으로</button>
+                </div>
                 <ul class="eq_use_list">
-                    <li>Leg Extension</li>
-                    <li>Leg Curl</li>
-                    <li>3</li>
-                    <li>4</li>
-                    <li>5</li>
-                    <li>6</li>
-                    <li>7</li>
-                    <li>8</li>
-                    <li>9</li>
-                    <li>0</li>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                    <li>5</li>
+                    <li>
+                        <div class="training_box" id="leg_extension_explain">
+                            <div><img class="thumbnail" src="../../images/thumbnail.png" alt=""></div>
+                            <div>
+                                Leg extension(왼쪽 사진 클릭시 동영상 실행)
+                                <br>
+                                video explain
+                                <br>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste maiores molestiae
+                                corporis, ullam cupiditate rerum
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="training_box" id="leg_curl_explain">
+                            <div><img class="thumbnail" src="../../images/thumbnail.png" alt=""></div>
+                            <div>
+                                Leg Curl(왼쪽 사진 클릭시 동영상 실행)
+                                <br>
+                                video explain
+                                <br>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste maiores molestiae
+                                corporis, ullam cupiditate rerum
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="training_box" id="leg_press_explain">
+                            <div><img class="thumbnail" src="../../images/thumbnail.png" alt=""></div>
+                            <div>
+                                Leg press(왼쪽 사진 클릭시 동영상 실행)
+                                <br>
+                                video explain
+                                <br>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste maiores molestiae
+                                corporis, ullam cupiditate rerum
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -98,6 +124,7 @@
         </footer>
         <!-- 스크립트 연결 -->
         <script src="../../js/main.js"></script>
+        <script src="../../js/equipments_event.js"></script>
 </body>
 
 </html>

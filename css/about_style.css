@@ -28,3 +28,79 @@
     padding: 10px;
     text-align: center;
 }
+
+@media screen and (max-width: 828px){
+    .menu_banner{
+        height: 400px;
+    }
+    
+    .banner_text{
+        font-size: 4em;
+        left: 40%;
+    }
+    
+    @keyframes change_banner_text{
+        0% {
+            left: 2%;
+        }
+        100% {
+            left: 40%;
+        }
+    }
+}
+@media screen and (max-width: 645px){
+    .menu_banner{
+        height: 300px;
+    }
+    
+    .banner_text{
+        font-size: 4em;
+        left: 35%;
+    }
+    
+    @keyframes change_banner_text{
+        0% {
+            left: 2%;
+        }
+        100% {
+            left: 35%;
+        }
+    }
+}
+
+@media screen and (max-width: 488px){
+    .menu_banner{
+        height: 150px;
+    }
+    
+    .banner_text{
+        font-size: 3.5em;
+        top: 30%;
+        left: 33%;
+    }
+    
+    @keyframes change_banner_text{
+        0% {
+            left: 2%;
+        }
+        100% {
+            left: 33%;
+        }
+    }
+}
+@media screen and (max-width: 376px){
+    
+    .banner_text{
+        font-size: 3.5em;
+        left: 29%;
+    }
+    
+    @keyframes change_banner_text{
+        0% {
+            left: 2%;
+        }
+        100% {
+            left: 29%;
+        }
+    }
+}
