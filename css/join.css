@@ -172,3 +172,16 @@ hr{
 footer{
     margin-top: 100px;
 }
+
+
+@media screen and (max-width: 426px){
+    .banner_container{
+        display: none;
+    }
+    .join_box{
+        width: 100%;
+    }
+    .cursor_pointer{
+        font-size: .8em;
+    }
+}

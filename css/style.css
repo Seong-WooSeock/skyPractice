@@ -244,13 +244,13 @@ body {
 	@media screen and (min-width : 961px) {/*769~935*/
 		/* ===================== 헤더 961~ ===================== */
 		.navi ul{
-			display: flex;	
+			display: flex !important;	
 		}
 		#headerMenuToggleImg{
-			display: none;
+			display: none !important;
 		}
 		#headerMenuToggle{
-			display: none;
+			display: none !important;
 		}
 		/* ===================== 헤더 끝 961~ ===================== */
 		
@@ -292,7 +292,7 @@ body {
 			padding: 5px 15px;
 		}
 		#headerMenuToggleImg{
-			display: block;
+			display: block !important;
 			cursor: pointer;
 		}
 		.navi a:hover, .navi a:active, .navi a:focus {
@@ -338,7 +338,7 @@ body {
 			font-size: 25px;
 		}
 		#headerMenuToggleImg{
-			display: block;
+			display: block !important;
 			cursor: pointer;
 		}
 
@@ -429,7 +429,7 @@ body {
 			padding: 5px 15px;
 		}
 		#headerMenuToggleImg{
-			display: block;
+			display: block !important;
 			cursor: pointer;
 		}
 		#headerMenuToggle{

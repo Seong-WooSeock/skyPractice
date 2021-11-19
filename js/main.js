@@ -6,48 +6,11 @@ let logoImg = document.getElementById("logoImg");
 
 
 // --------------헤더박스 반응형 웹 구축-------------------
-window.addEventListener('resize', () => {
-    if (matchMedia("screen and (min-width: 961px)").matches) {
-        headerMenuToggleImg.style.display = "none";
-        headerMenuToggle.style.display = "none";
-        menuLists.style.display = "flex";
-        menuLists.onmouseover = () => {
-            //headerMenuToggle,img 가 자동으로 나오는걸 방지
-        }
-    } else{
-        headerMenuToggleImg.onmouseover = () => {
-            headerMenuToggle.style.display = "block";
-            menuLists.style.display = "flex";
-        }
-        headerMenuToggleImg.onclick = () => {
-            headerMenuToggle.style.display = "block";
-            menuLists.style.display = "flex";
-        }
-        headerMenuToggle.onmouseout = () => {
-            menuLists.onmouseover = () => {
-                headerMenuToggle.style.display = "block";
-                menuLists.style.display = "flex";
-            }
-            headerMenuToggle.style.display = "none";
-            menuLists.style.display = "none";
-            headerMenuToggleImg.style.display = "block";
-        }
-        headerMenuToggleImg.style.display = "block";
-        headerMenuToggle.style.display = "none";
-        menuLists.style.display = "none";
-    }
-});
 
 headerMenuToggleImg.onmouseover = () => {
     headerMenuToggle.style.display = "block";
     menuLists.style.display = "flex";
 }
-
-headerMenuToggleImg.onclick = () => {
-    headerMenuToggle.style.display = "block";
-    menuLists.style.display = "flex";
-}
-
 headerMenuToggle.onmouseout = () => {
     menuLists.onmouseover = () => {
         headerMenuToggle.style.display = "block";
@@ -57,9 +20,7 @@ headerMenuToggle.onmouseout = () => {
     menuLists.style.display = "none";
     headerMenuToggleImg.style.display = "block";
 }
-headerMenuToggleImg.style.display = "block";
-headerMenuToggle.style.display = "none";
-menuLists.style.display = "none";
+
 // --------------헤더박스 반응형 웹 구축 끝-------------------
 
 // -------------헤더 박스 스크롤시 높이 조정------------------------
