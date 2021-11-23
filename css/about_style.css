@@ -104,3 +104,10 @@
         }
     }
 }
+
+@media (prefers-color-scheme: light) {
+    .aboutUs{
+        color: black;
+        background-color: #CCCCCC;
+    }
+}

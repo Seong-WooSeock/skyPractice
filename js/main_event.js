@@ -3,6 +3,7 @@ src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"
 
 let container = document.getElementById('indexPic');
 
+
 //-------------커서 따라 움직이는 하트-------------------
 // function moveHeart(e) {
 //     let heart = document.getElementById("cursorEvent");
@@ -35,9 +36,9 @@ erick.onclick = () => {
     nick.style.display = "none";
     june.style.display = "none";
     mainPic.src = "../images/erickMain.jpg";
-    exitEvent.style.display = "block"
-    erickEx.style.display = "block"
-    erickExDe.style.display = "block"
+    exitEvent.style.display = "block";
+    erickEx.style.display = "block";
+    erickExDe.style.display = "block";
 }
 
 erick.onmousemove = () => {
@@ -55,10 +56,10 @@ nick.onclick = () => {
     nick.style.display = "none";
     june.style.display = "none";
     mainPic.src = "../images/nickMain.jpg";
-    exitEvent.style.display = "block"
-    nickEx.style.display = "block"
-    nickExDe.style.display = "block"
-    nickExDe2.style.display = "block"
+    exitEvent.style.display = "block";
+    nickEx.style.display = "block";
+    nickExDe.style.display = "block";
+    nickExDe2.style.display = "block";
 }
 
 nick.onmousemove = () => {
@@ -77,9 +78,9 @@ june.onclick = () => {
     nick.style.display = "none";
     june.style.display = "none";
     mainPic.src = "../images/juneMain.jpg";
-    exitEvent.style.display = "block"
-    juneEx.style.display = "block"
-    juneExDe.style.display = "block"
+    exitEvent.style.display = "block";
+    juneEx.style.display = "block";
+    juneExDe.style.display = "block";
 }
 
 june.onmousemove = () => {

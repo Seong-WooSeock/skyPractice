@@ -152,3 +152,32 @@ h2{
         font-size:2em;
     }
 }
+
+@media (prefers-color-scheme: light) {
+    .page_container{
+        background-color: #CCCCCC;
+    }
+    .pic{
+        border: 1px solid black;
+    }
+    h2{
+        background: black;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+    
+    .detailTab ul{
+        border: .5px #191919 solid;
+        background-color: white;
+    }
+    #all{
+        background: black;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        font-weight: 900;
+    }
+
+    .photo_tab{
+        color: #505050e5;
+    }
+}

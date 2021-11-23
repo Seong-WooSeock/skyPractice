@@ -72,6 +72,7 @@
     height: 20%;
     border: 1px solid white;
     display: flex;
+    margin-bottom: 6px;
 }
 #leg_curl{
     top: 24%;
@@ -176,5 +177,21 @@
         100% {
             left: 28%;
         }
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .video_box{
+        background-color: #CCCCCC;
+    }
+    #back_btn{
+        background-color: #CCCCCC;
+    }
+    .eq_use_list{
+        color: black;
+    }
+    .training_box{
+        border: 1px solid black;
+        background-color: #cccccc71;
     }
 }

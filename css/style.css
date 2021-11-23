@@ -1,10 +1,35 @@
 ﻿@charset "utf-8";
+
+:root[color-theme='light'] {
+	--fw: 900; /*폰트굵기*/
+	--font_color_gw: white; /*폰트색상 금색 - 흰색*/
+	--font_color_bw: #090909; /*폰트색상 검정 - 흰색*/
+	--font_color_gb: #090909; /*폰트색상 검정 - 금색*/
+	--menuFont_color_gb: #090909; /*메뉴폰트색상 검정 - 금색*/
+	--bg_color_bw: white; /*배경 검정 - 흰색*/
+	--menu_color_gb: #CCCCCC; /*메뉴박스배경 회색 - 검정*/
+	--main_content_gb: #cccccc71; /*메인화면 컨텐츠 배경 회색 - 검정*/
+	--border_color_bw: 1px solid #090909; /* 테두리 색상 검정 -흰색 */
+}
+  
+:root[color-theme='dark'] {
+	--fw: 400;/*폰트굵기*/
+	--font_color_gw: linear-gradient(to right bottom,#C99335, #F0E7A2 70%, #C99335); /*폰트색상 금색 - 흰색*/
+	--font_color_bw: white; /*폰트색상 검정 - 흰색*/
+	--font_color_gb: linear-gradient(to right bottom,#C99335, #F0E7A2 70%, #C99335); /*폰트색상 검정 - 금색*/
+	--menuFont_color_gb: #DFC171; /*메뉴폰트색상 검정 - 금색*/
+	--bg_color_bw: url('/images/background1.jpg'); /*배경 검정 - 흰색*/
+	--menu_color_gb: #1d1c1c; /*메뉴박스배경 회색 - 검정*/
+	--main_content_gb: black; /*메인화면 컨텐츠 배경 회색 - 검정*/
+	--border_color_bw: 1px solid white; /* 테두리 색상 검정 -흰색 */
+}
+
+
 body{
-	background-image: url('/images/background1.jpg');
+	background: var(--bg_color_bw);
 	background-repeat: no-repeat;
 	background-size: 100% 800%;
 	background-attachment: fixed;
-	background-color: #0f0f0f;
 }
 a{
 	text-decoration: none;
@@ -13,18 +38,20 @@ body {
 	font: 14px;
 }
 .container{
-	width: 96%;
+	width: 100%;
     margin: 0 auto;
 }
 	/* ===================== 맨위 로그인 및 사이트 이동바 ===================== */
 #PT_Consulting{
 	top: 0;
-	width: 96%;
+	left: 0;
+	width: 100%;
 	height: 21px;
 	margin: 0 auto;
 	position: fixed;
+	box-sizing: content-box;
 	z-index :9998;
-	background-image: url('/images/background1.jpg');
+	background: #090909;
 	background-repeat: no-repeat;
 	display: flex;	
 }
@@ -41,7 +68,7 @@ body {
 	position: relative;
 	font-size:20px;
 	font-family: 'Bebas Neue', cursive;
-	background: linear-gradient(to right bottom,#C99335, #F0E7A2 70%, #C99335);
+	background: var(--font_color_gw);
 	-webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;
 	cursor: pointer;
@@ -58,7 +85,7 @@ body {
 	position: relative;
 	font-size:20px;
 	font-family: 'Bebas Neue', cursive;
-	background: linear-gradient(to right bottom,#C99335, #F0E7A2 70%, #C99335);
+	background:  var(--font_color_gw);
 	-webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;
 	cursor: pointer;
@@ -70,7 +97,7 @@ body {
 	font-size:19px;
 	font-family: 'Bebas Neue', cursive;
 	text-align: center;
-	background: linear-gradient(to right bottom,#C99335, #F0E7A2 70%, #C99335);
+	background:  var(--font_color_gw);
 	-webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;
 	cursor: pointer;
@@ -82,7 +109,7 @@ body {
 	font-size:19px;
 	font-family: 'Bebas Neue', cursive;
 	text-align: center;
-	background: linear-gradient(to right bottom,#C99335, #F0E7A2 70%, #C99335);
+	background:  var(--font_color_gw);
 	-webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;
 	cursor: pointer;
@@ -110,6 +137,7 @@ body {
 	header {
 		width: 100%;
 		padding: 0;
+		left: 0;
 		position:relative;
 		height: 100px;
 		position: fixed;
@@ -120,7 +148,7 @@ body {
 		margin-top: -7px;
 		box-sizing: content-box;
 		position:relative;
-		background-image: url('/images/background1.jpg');
+		background: var(--bg_color_bw);
 		background-repeat: no-repeat;
 		width:100%;
 		height: 120px;
@@ -153,16 +181,17 @@ body {
 	}
 	
 	.navi a, .navi a:visited {
+		font-weight: var(--fw);
 		margin-top: 20px;
 		padding:0;
 		display: block;
 		width: 150px; 
 		text-decoration: none;
-		color: #DFC171;
+		color: var(--menuFont_color_gb);
 	}
 	.navi a:hover, .navi a:active, .navi a:focus {
 		font-size: 21px;
-		background: linear-gradient(to right top,#F0E7A2, #C99335 30%, #F0E7A2);
+		background: var(--font_color_gb);
 		-webkit-text-fill-color: transparent;
 		-webkit-background-clip: text;
 	}
@@ -170,12 +199,11 @@ body {
 	#headerMenuToggle{
 		width: 40%;
 		height: 2000px;
-		background: #1d1c1c;
+		background: var(--menu_color_gb);
 		opacity: 0.7;
 		position: absolute;
 		right: 0px;
 		top: 4px;
-		color: #242424;
 		font-size: 30px;
 		display: none;
 	}
@@ -398,11 +426,10 @@ body {
 	@media screen and (max-width: 376px){/*0 ~ 376*/
 		/* ===================== 헤더 0 ~ 376 ===================== */
 		body {
-			background-image: url('/images/backgroundphone.jpg');
+			background: var(--bg_color_bw);
 			background-repeat: no-repeat;
 			background-size: 100%;
 			background-attachment: fixed;
-			background-color: #0f0f0f;
 		}
 
 		#headerMenuToggle{
@@ -411,7 +438,7 @@ body {
 		.navi{
 			box-sizing: content-box;
 			position:relative;
-			background-image: url('/images/background1.jpg');
+			background: var(--bg_color_bw);
 			background-repeat: no-repeat;
 			flex-direction: column;
 			align-items: flex-start;
@@ -527,26 +554,22 @@ body {
 .homepageExplain{
 	padding-top: 20px;
 	padding-bottom: 20px;
-	background: black;
+	background: var(--main_content_gb);
 	opacity: 0.8;	
 }
 
 .homepageExplain p,h2{
 	text-align: center;
-	color: white;
 	font-family: 'Nanum Gothic', sans-serif;
-	background: linear-gradient(to right bottom,#C99335, #F0E7A2 70%, #C99335);
+	background: var(--font_color_gb);
 	-webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;
 }
-#currentUser{
+#currentUser, #currentGolfUser{
 	font-size: 25px;
-	color: white;
+	color: var(--font_color_bw);
 }
-#currentGolfUser{
-	font-size: 25px;
-	color: white;
-}
+
 #lightBox{
 	text-align: center;
 }
@@ -557,10 +580,10 @@ body {
 	height: 60px;
 	text-align: center;
 	font-family: 'Nanum Gothic', sans-serif;
-	background: linear-gradient(to right bottom,#C99335, #F0E7A2 70%, #C99335);
+	background: var(--font_color_gb);
 	-webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;
-	border: 1px solid white;
+	border: var(--border_color_bw);
 	display: inline-block;
 	
 }
@@ -579,11 +602,12 @@ body {
 /* ===================== 실시간 회원수 끝 ===================== */
 
 footer{
+	margin-top: 10px;
 	font-family: 'Nanum Gothic', sans-serif;
 	padding-top: 10px;
-	border: 1px solid white;
+	border: var(--border_color_bw);
 	border-radius: 2px;
-	color: white;
+	color: var(--font_color_bw);
 	text-align: center;
 	text-decoration: none;
 	font: 8px;
@@ -603,5 +627,49 @@ footer{
 #loginSubmit{
 	width: 200px;
 	text-align: center;
+}
+
+.web_skin{
+	display: flex;
+	position: absolute;
+	position: fixed;
+	justify-content: center;
+	bottom: 30px;
+	right:  50px;
+	z-index: 99999;
+}
+.up_to_top{
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	border: 2px solid #090909;
+	font-size: 1.5em;
+	color: #090909;
+	background: #CCCCCC;
+	cursor: pointer;
+	margin-left: 6px;
+}
+
+.skin_btn{
+	font-size: 1em;
+	font-weight: 900;
+	border-radius: 2rem;
+	width: 170px;
+	height: 40px;
+	border: 2px solid white;
+	padding: 0;
+	color: white;
+	background: none;
+	cursor: pointer;
+	text-align: center;
+}
+.light_mode{
+	display: none;
+}
+.dark_mode{
+	border: 2px solid #090909;
+	color: #090909;
+	background: #CCCCCC;
+	cursor: pointer;
 }
 

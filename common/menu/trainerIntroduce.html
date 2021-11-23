@@ -28,10 +28,11 @@
         <!-- sky365에 피트니스 외 골프와 필라테스 페이지 이동 아이콘, 센터 지도 및 로그인 구축, 필요시 사이트맵 핸들링 -->
         <div id="PT_Consulting">
             <a href="../otherFunction/sky365Pilates.html" class="pilates"><img id="pilatesLogo"
-                    src="../../images/pliatesLogo.png" alt="pliateslogo" width="21px" height="21px"><span
+                    src="../../images/pliatesLogo-white.png" alt="pliateslogo" width="21px" height="21px"><span
                     id="pilatesText">pilates</span></a>
-            <a href="../otherFunction/sky365Golf.html" class="golf"><img id="golfLogo" src="../../images/golflogo.png"
-                    alt="골프로고" width="21px" height="21px"><span id="golfText">golf</span></a>
+            <a href="../otherFunction/sky365Golf.html" class="golf"><img id="golfLogo"
+                    src="../../images/golflogo-white.png" alt="골프로고" width="21px" height="21px"><span
+                    id="golfText">golf</span></a>
             <a href="#" id="centerMap">find a center <img src="../../images/findlogo.png" alt="돋보기" width="16px"
                     height="16px"></a>
             <a href="../user/userLogin.html" id="loginBtn">sign-in</a>
@@ -40,7 +41,7 @@
         <!-- 헤더 (반응형 웹 구축 , 마우스 휠을 내릴경우 헤더의 height가 낮아지는 기능 구축) -->
         <header>
             <nav class="navi" id="navi">
-                <a id="logo" href="../index.html"><img id="logoImg" src="../../images/goldlogo.png" alt="금색 로고"></a>
+                <a id="logo" href="../index.html"><img id="logoImg" src="../../images/blacklogo.png" alt="금색 로고"></a>
                 <img id="headerMenuToggleImg" src="../../images/menuList.png" alt="메뉴리스트">
                 <div id="headerMenuToggle"></div>
                 <ul id="menuLists">
@@ -80,20 +81,20 @@
                     <img id="trainerImg" src="../../images/nickmainpic.jpg" alt="nickmainpic">
                 </div>
                 <div id="trainerBox">
-                    <div class="trainer"><img id="nick" onclick="nickPic()" src="../../images/nickminipic.jpg"
-                            alt="nickminipic" width="100%">
+                    <div class="trainer"><img class="trainer_pic" src="../../images/nickminipic.jpg" alt="nickminipic"
+                            width="100%">
                     </div>
-                    <div class="trainer"><img id="zino" onclick="zinoPic()" src="../../images/zinominipic.jpg"
-                            alt="nickminipic" width="100%">
+                    <div class="trainer"><img class="trainer_pic" src="../../images/zinominipic.jpg" alt="nickminipic"
+                            width="100%">
                     </div>
-                    <div class="trainer"><img id="june" onclick="junePic()" src="../../images/juneminipic.jpg"
-                            alt="nickminipic" width="100%">
+                    <div class="trainer"><img class="trainer_pic" src="../../images/juneminipic.jpg" alt="nickminipic"
+                            width="100%">
                     </div>
-                    <div class="trainer"><img id="erick" onclick="erickPic()" src="../../images/erickminipic.jpg"
-                            alt="nickminipic" width="100%">
+                    <div class="trainer"><img class="trainer_pic" src="../../images/erickminipic.jpg" alt="nickminipic"
+                            width="100%">
                     </div>
-                    <div class="trainer"><img id="yunee" onclick="yuneePic()" src="../../images/yuneeminipic.jpg"
-                            alt="nickminipic" width="100%">
+                    <div class="trainer"><img class="trainer_pic" src="../../images/yuneeminipic.jpg" alt="nickminipic"
+                            width="100%">
                     </div>
                 </div>
             </div>
@@ -105,8 +106,13 @@
                 </address>
                 <p> Copyright ⓒ. All rights reserved.</p>
             </footer>
+            <div class="web_skin">
+                <button value="lightMode" class="light_mode skin_btn"><i class="fas fa-sun"></i> 라이트 모드</button>
+                <button value="darkMode" class="dark_mode skin_btn"><i class="far fa-moon"></i> 다크 모드</button>
+                <button class="up_to_top"><i class="fas fa-arrow-up"></i></button>
+            </div>
             <!-- 스크립트 연결 -->
-            <script src="../../js/go_intro.js"></script>
+            <script src="https://kit.fontawesome.com/39caf77dda.js" crossorigin="anonymous"></script>
             <script src="../../js/main.js"></script>
             <script src="../../js/trainer_intro.js"></script>
 

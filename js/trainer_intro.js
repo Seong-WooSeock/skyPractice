@@ -1,21 +1,25 @@
 let tl = document.querySelectorAll('.TL');
 let ta = document.querySelectorAll('.TA');
-
 let focusTab = document.querySelector('.focusTab');
 
-
-for (let i = 0; i < tl.length; i++){
-    tl[i].style.borderTop = '0px';
-    tl[i].style.borderBottom = '0px';
-    tl[i].style.borderLeft = '0px';
-    tl[i].style.borderRight = '1px solid white';
-    if (i == 5) {
+function border_line_color(style) {
+    for (let i = 0; i < tl.length; i++){
         tl[i].style.borderTop = '0px';
         tl[i].style.borderBottom = '0px';
         tl[i].style.borderLeft = '0px';
-        tl[i].style.borderRight = '0px';
+        tl[i].style.borderRight = style;
+        if (i == 5) {
+            tl[i].style.borderRight = '0px';
+        } 
     } 
 }
+
+if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+    border_line_color('1px solid white');
+} else {
+    border_line_color('1px solid black');
+}
+
 
 
 for (let i = 0; i < tl.length; i++){
@@ -28,31 +32,22 @@ for (let i = 0; i < tl.length; i++){
     });  
 }
 
-let nick = document.getElementById("nick");
-let zino = document.getElementById("zino");
-let june = document.getElementById("june");
-let erick = document.getElementById("erick");
-let yunee = document.getElementById("yunee");
+const trainer_pic = document.querySelectorAll('.trainer_pic');
+let trainerImg = document.getElementById("trainerImg");
 
-let pic = document.getElementById("trainerImg");
-
-function nickPic() {
-    pic.src = "../../images/nickmainpic.jpg";
+trainer_pic[0].onclick = () => {
+    trainerImg.src = "../../images/nickmainpic.jpg";
 }
-
-function zinoPic() {
-    pic.src = "../../images/zinomainpic.jpg";
+trainer_pic[1].onclick = () => {
+    trainerImg.src = "../../images/zinomainpic.jpg";
 }
-
-function junePic() {
-    pic.src = "../../images/junemainpic.jpg";
+trainer_pic[2].onclick = () => {
+    trainerImg.src = "../../images/junemainpic.jpg";
 }
-
-function erickPic() {
-    pic.src = "../../images/erickmainpic.jpg";
+trainer_pic[3].onclick = () => {
+    trainerImg.src = "../../images/erickmainpic.jpg";
 }
-
-function yuneePic() {
-    pic.src = "../../images/yuneemainpic.jpg";
+trainer_pic[4].onclick = () => {
+    trainerImg.src = "../../images/yuneemainpic.jpg";
 }
 

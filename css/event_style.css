@@ -96,27 +96,6 @@
   
 }
 
-.learnMore{
-    color: white;
-    font-size: 25px;
-    font-family: 'Bebas Neue', cursive;
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0,0,0,.6);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    z-index: 999;
-    opacity: 0;
-    transition: all .5s cubic-bezier(.25, .46, .45, 1);
-    cursor: pointer;
-}
-
 .event_img{
     width: 100%;
     height: 200px;
@@ -221,3 +200,41 @@
     }
 }
 
+@media (prefers-color-scheme: light) {
+
+    .detailTab ul{
+        border: .5px black solid;
+        background-color: white;
+    }
+    .detailTab ul li{
+        border-color: black;
+        color: black;
+    }
+    #all{
+        background: black;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        font-weight: 900;
+    }
+    .event_container{
+        background-color: #CCCCCC;
+    }
+
+    .header_box{
+        background: black;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+    .events{
+        background-color: white;
+    }
+    .event_content{
+        color: black;
+        background-color: #CCCCCC;
+    }
+    .backList{
+        background-color: white;
+        border: 2px solid #191919;
+        color: #191919;
+    }
+}
