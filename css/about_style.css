@@ -1,3 +1,14 @@
+:root[color-theme='light'] {
+    --bg_co: #CCCCCC;/*배경*/
+    --ft_co: black; /*폰트*/
+}
+  
+:root[color-theme='dark'] {
+    --bg_co: #191919; /*배경*/
+    --ft_co: white; /*폰트*/
+}
+
+
 .menu_banner{
     height: 500px;
     background:center/100% url("/images/aboutPic.jpg");
@@ -22,9 +33,9 @@
 .aboutUs{
     margin-top: 40px;
     margin-bottom: 40px;
-    color: white;
+    color: var(--ft_co);;
     opacity: 0.7;
-    background-color: #191919;
+    background-color: var(--bg_co);
     padding: 10px;
     text-align: center;
 }
@@ -102,12 +113,5 @@
         100% {
             left: 29%;
         }
-    }
-}
-
-@media (prefers-color-scheme: light) {
-    .aboutUs{
-        color: black;
-        background-color: #CCCCCC;
     }
 }

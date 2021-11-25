@@ -1,3 +1,5 @@
+
+
 let headerMenuToggleImg = document.getElementById("headerMenuToggleImg");
 let headerMenuToggle = document.getElementById("headerMenuToggle");
 let menuLists = document.getElementById("menuLists");
@@ -61,18 +63,30 @@ const light_mode = document.querySelector('.light_mode');
 const dark_mode = document.querySelector('.dark_mode');
 
 const isUserColorTheme = localStorage.getItem('color-theme');
-const isOsColorTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-const getUserTheme = () => (isUserColorTheme ? isUserColorTheme : isOsColorTheme);
 
 window.onload = () => {
-    if (getUserTheme === 'dark') {
+    if (isUserColorTheme === 'dark') {
       localStorage.setItem('color-theme', 'dark');
-      document.documentElement.setAttribute('color-theme', 'dark');
+        document.documentElement.setAttribute('color-theme', 'dark');
+        dark_mode.style.display = 'none';
+        light_mode.style.display = 'block';
+        up_to_top.style.color = 'white';
+        up_to_top.style.border = '2px solid white';
+        up_to_top.style.background = 'none';
+        dm();
     } else {
       localStorage.setItem('color-theme', 'light');
-      document.documentElement.setAttribute('color-theme', 'light');
+        document.documentElement.setAttribute('color-theme', 'light');
+        lm();
+        dark_mode.style.display = 'block';
+        light_mode.style.display = 'none';
+        up_to_top.style.color = '#090909';
+        up_to_top.style.border = '2px solid #090909';
+        up_to_top.style.background = '#CCCCCC';
     }
-  };
+};
+
+
 
 
 light_mode.onclick = () => {
@@ -83,27 +97,22 @@ light_mode.onclick = () => {
     up_to_top.style.color = '#090909';
     up_to_top.style.border = '2px solid #090909';
     up_to_top.style.background = '#CCCCCC';
-    pilatesLogo.src = "../images/pliatesLogo-white.png";
-    golfLogo.src = "../images/golflogo-white.png";
-    reading_glasses.src = "../images/findlogo.png";
-    logoImg.src = "../images/blacklogo.png";
-    headerMenuToggleImg.src = "../images/menuList-black.png";
+    lm();
 }
 
 dark_mode.onclick = () => {
-    localStorage.setItem('color-theme', 'light');
+    localStorage.setItem('color-theme', 'dark');
     document.documentElement.setAttribute('color-theme', 'dark');
     dark_mode.style.display = 'none';
     light_mode.style.display = 'block';
     up_to_top.style.color = 'white';
     up_to_top.style.border = '2px solid white';
     up_to_top.style.background = 'none';
-    pilatesLogo.src = "../images/pliatesLogo.png";
-    golfLogo.src = "../images/golflogo.png";
-    reading_glasses.src = "../images/findlogo-gold.png";
-    logoImg.src = "../images/goldlogo.png";
-    headerMenuToggleImg.src = "../images/menuList.png";
+    dm();
 }
+
+
+
 
 up_to_top.onclick = () => {
     window.scrollTo(0, 0);

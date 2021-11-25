@@ -29,26 +29,6 @@ for (let i = 0; i < tl.length; i++){
         });
     });  
 }
-
-const trainer_pic = document.querySelectorAll('.trainer_pic');
-let trainerImg = document.getElementById("trainerImg");
-
-trainer_pic[0].onclick = () => {
-    trainerImg.src = "../../images/nickmainpic.jpg";
-}
-trainer_pic[1].onclick = () => {
-    trainerImg.src = "../../images/zinomainpic.jpg";
-}
-trainer_pic[2].onclick = () => {
-    trainerImg.src = "../../images/junemainpic.jpg";
-}
-trainer_pic[3].onclick = () => {
-    trainerImg.src = "../../images/erickmainpic.jpg";
-}
-trainer_pic[4].onclick = () => {
-    trainerImg.src = "../../images/yuneemainpic.jpg";
-}
-// -------------------이미지 경로----------------------
 function lm() {
     border_line_color('1px solid black');
     let headerMenuToggleImg = document.getElementById("headerMenuToggleImg");
@@ -57,11 +37,11 @@ function lm() {
     let reading_glasses = document.getElementById('reading_glasses');
     let logoImg = document.getElementById('logoImg');
 
-    pilatesLogo.src = "../../images/pliatesLogo-white.png";
-    golfLogo.src = "../../images/golflogo-white.png";
-    reading_glasses.src = "../../images/findlogo.png";
-    logoImg.src = "../../images/blacklogo.png";
-    headerMenuToggleImg.src = "../../images/menuList-black.png";
+    pilatesLogo.src = "../../../images/pliatesLogo-white.png";
+    golfLogo.src = "../../../images/golflogo-white.png";
+    reading_glasses.src = "../../../images/findlogo.png";
+    logoImg.src = "../../../images/blacklogo.png";
+    headerMenuToggleImg.src = "../../../images/menuList-black.png";
 }
 
 function dm() {
@@ -72,10 +52,10 @@ function dm() {
     let reading_glasses = document.getElementById('reading_glasses');
     let logoImg = document.getElementById('logoImg');
     
-    pilatesLogo.src = "../../images/pliatesLogo.png";
-    golfLogo.src = "../../images/golflogo.png";
-    reading_glasses.src = "../../images/findlogo-gold.png";
-    logoImg.src = "../../images/goldlogo.png";
-    headerMenuToggleImg.src = "../../images/menuList.png";
+    pilatesLogo.src = "../../../images/pliatesLogo.png";
+    golfLogo.src = "../../../images/golflogo.png";
+    reading_glasses.src = "../../../images/findlogo-gold.png";
+    logoImg.src = "../../../images/goldlogo.png";
+    headerMenuToggleImg.src = "../../../images/menuList.png";
 }
 // -------------------이미지 경로----------------------

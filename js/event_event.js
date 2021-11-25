@@ -73,24 +73,7 @@ function endedBlock() {
 
 // 탭 클릭시 헤더 제목 바뀌는 함수 끝 ======================
 
-
-if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-    border_line_color('1px solid white');
-    for (let i = 0; i < event_tab.length; i++){
-        event_tab[i].addEventListener('click', () => {
-            if (i == 0) {
-                tabList(0, 1, 2, gold_grad, white_col);
-                allBlock();
-            } else if (i == 1) {
-                tabList(1, 0, 2, gold_grad, white_col);
-                goingBlock();
-            } else {
-                tabList(2, 0, 1, gold_grad, white_col);
-                endedBlock();
-            }
-        });
-    }
-} else {
+function lm_event() {
     border_line_color('1px solid black');
     for (let i = 0; i < event_tab.length; i++){
         event_tab[i].addEventListener('click', () => {
@@ -108,11 +91,61 @@ if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
     }
 }
 
-// 목록 돌아 가기 버튼 ===============================
-let backList = document.querySelector(".backList");
+function dm_event() {
+    border_line_color('1px solid white');
+    for (let i = 0; i < event_tab.length; i++){
+        event_tab[i].addEventListener('click', () => {
+            if (i == 0) {
+                tabList(0, 1, 2, gold_grad, white_col);
+                allBlock();
+            } else if (i == 1) {
+                tabList(1, 0, 2, gold_grad, white_col);
+                goingBlock();
+            } else {
+                tabList(2, 0, 1, gold_grad, white_col);
+                endedBlock();
+            }
+        });
+    }
+}
 
-backList.addEventListener('click', () => {
-    location.href = '../event.html';
-})
-// 목록 돌아 가기 버튼 끝 ===============================
 
+if (localStorage.getItem('color-theme') == 'dark') {
+    dm_event()
+} else {
+    lm_event()
+}
+
+
+
+// -------------------이미지 경로----------------------
+function lm() {
+    lm_event()
+    let headerMenuToggleImg = document.getElementById("headerMenuToggleImg");
+    let pilatesLogo = document.getElementById('pilatesLogo');
+    let golfLogo = document.getElementById('golfLogo');
+    let reading_glasses = document.getElementById('reading_glasses');
+    let logoImg = document.getElementById('logoImg');
+
+    pilatesLogo.src = "../../images/pliatesLogo-white.png";
+    golfLogo.src = "../../images/golflogo-white.png";
+    reading_glasses.src = "../../images/findlogo.png";
+    logoImg.src = "../../images/blacklogo.png";
+    headerMenuToggleImg.src = "../../images/menuList-black.png";
+}
+
+function dm() {
+    dm_event()
+    let headerMenuToggleImg = document.getElementById("headerMenuToggleImg");
+    let pilatesLogo = document.getElementById('pilatesLogo');
+    let golfLogo = document.getElementById('golfLogo');
+    let reading_glasses = document.getElementById('reading_glasses');
+    let logoImg = document.getElementById('logoImg');
+    
+    pilatesLogo.src = "../../images/pliatesLogo.png";
+    golfLogo.src = "../../images/golflogo.png";
+    reading_glasses.src = "../../images/findlogo-gold.png";
+    logoImg.src = "../../images/goldlogo.png";
+    headerMenuToggleImg.src = "../../images/menuList.png";
+}
+// -------------------이미지 경로----------------------

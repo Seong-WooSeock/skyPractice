@@ -1,3 +1,22 @@
+:root[color-theme='light'] {
+    --bg_co_gb: #cccccc71;/*배경 회색 - 검정*/
+    --bg_co_wb: white;/*배경 흰색 - 검정*/
+    --border_l: .5px #191919 solid;/*보더 전체*/
+    --border_c: #191919;/*보더 색*/
+    --ft_co_bg: #191919; /*폰트 검정-금색*/
+    --ft_co_gw: #505050e5;/*폰트 회색-흰색*/
+}
+  
+:root[color-theme='dark'] {
+    --bg_co_gb: #191919;/*배경 회색 - 검정*/
+    --bg_co_wb: #191919;/*배경 흰색 - 검정*/
+    --border: .5px white solid;/*보더 값*/
+    --border_c: white;/*보더 색*/
+    --ft_co_bg: linear-gradient(to right bottom,#C99335, #F0E7A2 70%, #C99335);; /*폰트 검정-금색*/
+    --ft_co_gw: white;/*폰트 회색-흰색*/
+}
+
+
 .content{
     width: 100%;
 }
@@ -7,7 +26,7 @@
 
 .trainerIntro{
     width: 100%;
-    background-color: #191919;
+    background-color: var(--bg_co_gb);
     margin-top: 20px;
     padding-top: 10px;
 }
@@ -22,15 +41,15 @@
 #trainerTab ul{
     list-style: none;
     display: flex;
-    justify-content: space-evenly   ;	
+    justify-content: space-evenly;	
     max-width: 500px;
     padding: 1em .5em 1em .5em;
     text-align: center;
     border-radius: 2rem;
-    border: .5px white solid;
+    border: var(--border_l);
     margin: 0 auto 80px;
     font-size: .875em;
-    background-color: #191919;
+    background-color: var(--bg_co_wb);
 }
 
 
@@ -39,7 +58,7 @@
     height: 100%;
     padding: 5px 15px 4px 15px;
     text-align: center;
-    border-color: white;
+    border-color: var(--border_c);
     font-family: 'Bebas Neue', cursive;
     font-size: 20px;
     cursor: pointer;
@@ -53,7 +72,7 @@
 
 
 .focusTab{
-    background: linear-gradient(to right bottom,#C99335, #F0E7A2 70%, #C99335);
+    background: var(--ft_co_bg);
 	-webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;
     font-weight: 900;
@@ -65,7 +84,7 @@
 }
 
 .focusOutTab{
-    color: white;
+    color: var(--ft_co_gw);
     font-weight: 100;
 }
 
@@ -85,7 +104,7 @@
 h2{
     font-size:3.5em;
     font-family: 'Bebas Neue', cursive;
-    background: linear-gradient(to right bottom,#C99335, #F0E7A2 70%, #C99335);
+    background: var(--ft_co_bg);
 	-webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;
 }
@@ -178,32 +197,3 @@ h2{
 
 }
 
-@media (prefers-color-scheme: light) {
-    .trainerIntro{
-        background-color: #cccccc71;
-    }
-
-    #trainerTab ul{
-        border: .5px #191919 solid;
-        background-color: white;
-    }
-    #trainerTab ul li{
-        border-color: #191919;
-    }
-
-    .focusTab{
-        background: #191919;
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-        font-weight: 900;
-    }
-    .focusOutTab{
-        color: #505050e5;
-    }
-
-    h2{
-        background: #191919;
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-    }
-}

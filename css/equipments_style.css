@@ -1,3 +1,17 @@
+:root[color-theme='light'] {
+    --bg_co_gw: #CCCCCC;/*배경 회색 흰색*/
+    --bg_co_gb: #cccccc71;/*배경 회색 none*/
+    --ft_co: black; /*폰트*/
+    --border: 1px solid black; /*보더*/
+ 
+}
+  
+:root[color-theme='dark'] {
+    --bg_co: white; /*배경*/
+    --ft_co: white; /*폰트*/
+    --bg_co_gb: none;
+    --border: 1px solid white; /*보더*/
+}
 
 #floorPlan{
     position: relative;
@@ -12,7 +26,7 @@
     width: 509px;
     height: 211px;
     position: absolute;
-    background-color: white;
+    background-color: var(--bg_co_gw);
     text-align: left;
     display: none;
 }
@@ -26,7 +40,7 @@
     bottom: 10px;
     right: 10px;
     padding: 10px 20px 10px 20px;
-    background-color: white;
+    background-color: var(--bg_co_gw);
     border: 2px solid #191919;
     color: #191919;
     border-radius: 30px;
@@ -41,7 +55,7 @@
 }
 
 .eq_use_list{
-    color: wheat;
+    color: var(--ft_co);
     list-style: none;
 }
 
@@ -70,7 +84,8 @@
 .training_box{
     width: 94%;
     height: 20%;
-    border: 1px solid white;
+    border: var(--border);
+    background: var(--bg_co_gb);
     display: flex;
     margin-bottom: 6px;
 }
@@ -180,18 +195,3 @@
     }
 }
 
-@media (prefers-color-scheme: light) {
-    .video_box{
-        background-color: #CCCCCC;
-    }
-    #back_btn{
-        background-color: #CCCCCC;
-    }
-    .eq_use_list{
-        color: black;
-    }
-    .training_box{
-        border: 1px solid black;
-        background-color: #cccccc71;
-    }
-}
