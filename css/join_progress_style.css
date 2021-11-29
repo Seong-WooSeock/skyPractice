@@ -1,3 +1,26 @@
+:root[color-theme='light'] {
+    --bg_co_wb: #ebebeb; /*배경 흰색 검정*/
+    --co_bw: #191919; /*색 검정 흰색*/
+    --ft_bd_co_wb: #191919;/*폰트 보더, 흰색 검정*/
+    --ft_co_bw: #191919; /*폰트 검정 흰색*/
+    --bd_co_bw: 3px solid #5C5C5C;/*보더 흰색 검정*/
+    --bd_co_bg: 3px solid #191919;/*보더 검정 연한회색*/
+    --bd_co_bwg: 1px solid #191919;/*보더 검정 연한회색*/
+    --bg_co_gg: #5C5C5C;/*배경 진한회색 연한회색*/
+    --fontweight: 900;
+}
+:root[color-theme='dark'] {
+    --bg_co_wb: #191919; /*배경 흰색 검정*/
+    --co_bw: #ebebeb; /*색 검정 흰색*/
+    --ft_bd_co_wb: #cfcece;/*폰트 보더, 흰색 검정*/
+    --ft_co_bw: white; /*폰트 검정 흰색*/
+    --bd_co_bw: 3px solid #bdbdbd;/*보더 흰색 검정*/
+    --bd_co_bg: 3px solid #cfcece;/*보더 검정 연한회색*/
+    --bd_co_bwg: 1px solid #ebebeb;/*보더 검정 연한회색*/
+    --bg_co_gg: #bdbdbd;/*배경 진한회색 연한회색*/
+    --fontweight: 100;
+}
+
 .content{
     height: 500px;
     display: flex;
@@ -12,15 +35,15 @@
 #join{
     width: 450px;
     height: 400px;
-    background-color: #191919;
-    color: white;
+    background-color: var(--bg_co_wb);
+    color: var(--ft_co_bw);
     text-align: center;
     box-sizing: border-box;
 }
 
 #join_content{
     text-align: center;
-    color: #bdbdbd;
+    color: var(--bg_co_gg);
 }
 
 .join_title{
@@ -36,7 +59,7 @@
 }
 .progress_box{
     border-radius: 50%;
-    border: 3px solid #bdbdbd;
+    border: var(--bd_co_bw);
     margin: 0px 3px;
 }
 .proceeding{
@@ -48,20 +71,20 @@
     padding: 0px 10px;
 }
 .completed{
-    background-color: #bdbdbd;
+    background-color: var(--bg_co_gg);
     padding: 0px 10px;
 }
 .phone_box{
     position: relative;
 }
 .phone_input{
-    color: #ebebeb;
+    color: var(--co_bw);
     background: none;
     position: relative;
     box-sizing: border-box;
     border-width: 0px 0px 2px;
     border-style: solid;
-    border-color: #ebebeb;
+    border-color: var(--co_bw);
     width: 300px;
     height: 48px;
     font-size: 1em;
@@ -78,9 +101,10 @@
     width: 50px;
     height: 38px;
     background: none;
-    color: #ebebeb;
+    color: var(--co_bw);
     border-radius: 20px;
-    border: 1px solid #ebebeb; 
+    border: var(--bd_co_bwg);
+    
 }
 
 .certification_btnBox{
@@ -92,21 +116,23 @@
     width: 80px;
     height: 38px;
     background: none;
-    color: #ebebeb;
+    color: var(--co_bw);
     border-radius: 20px;
-    border: 1px solid #ebebeb;   
+    border: var(--bd_co_bwg); 
     cursor: pointer;  
+    font-weight: var(--fontweight);
 }
 
 .recertification_btn{
     width: 80px;
     height: 38px;
     background: none;
-    color: #ebebeb;
+    color: var(--co_bw);
     border-radius: 20px;
-    border: 0.5px solid #ebebeb;
+    border: var(--bd_co_bwg);
     display: none;
     cursor: pointer;  
+    font-weight: var(--fontweight);
 }
 
 .confirm_btn{
@@ -125,7 +151,7 @@
 }
 .not_hyphen{
     display: none;
-    color: #ebebeb;
+    color: var(--co_bw);
     font-size: 0.45em;
 }
 .error_num{
@@ -135,7 +161,7 @@
 }
 .input_guide{
     display: none;
-    color: #ebebeb;
+    color: var(--co_bw);
     font-size: 0.45em;
 }
 .certification_number_box{
@@ -143,13 +169,13 @@
     display: none;
 }
 .certification_number{
-    color: #ebebeb;
+    color: var(--co_bw);
     background: none;
     position: relative;
     box-sizing: border-box;
     border-width: 0px 0px 2px;
     border-style: solid;
-    border-color: #ebebeb;
+    border-color: var(--co_bw);
     width: 300px;
     height: 48px;
     font-size: 1em;
@@ -172,14 +198,15 @@ input[type = number]::-webkit-inner-spin-button {
     width: 300px;
     height: 60px;
     background:none;
-    border: 3px solid #cfcece;
-    color: #cfcece;
+    border: var(--bd_co_bg);
+    color: var(--ft_bd_co_wb);
     font-size: 1.25em;
     cursor: pointer;  
+    margin-bottom: 100px;
 }
 .deleteBox{
-    background-color: #191919;
-    color: #ebebeb;
+    background-color: var(--bg_co_wb);
+    color: var(--co_bw);
     font-size: 14px;
 }
 
@@ -192,13 +219,13 @@ input[type = number]::-webkit-inner-spin-button {
 }
 
 .name_input{
-    color: #ebebeb;
+    color: var(--co_bw);
     background: none;
     position: relative;
     box-sizing: border-box;
     border-width: 0px 0px 2px;
     border-style: solid;
-    border-color: #ebebeb;
+    border-color: var(--co_bw);
     width: 300px;
     height: 38px;
     font-size: 1em;
@@ -208,26 +235,26 @@ input[type = number]::-webkit-inner-spin-button {
     padding-top: 10px;
 }
 .birth_year{
-    color: #ebebeb;
+    color: var(--co_bw);
     background: none;
     position: relative;
     box-sizing: border-box;
     border-width: 0px 0px 2px;
     border-style: solid;
-    border-color: #ebebeb;
+    border-color: var(--co_bw);
     width: 95px;
     height: 38px;
 }
 .birth_month{
     text-align: center;
     font-size: 1em;
-    color: #ebebeb;
+    color: var(--co_bw);
     background: none;
     position: relative;
     box-sizing: border-box;
     border-width: 0px 0px 2px;
     border-style: solid;
-    border-color: #ebebeb;
+    border-color: var(--co_bw);
     width: 60px;
     height: 38px;
 }
@@ -235,13 +262,13 @@ input[type = number]::-webkit-inner-spin-button {
 .birth_date{
     text-align: center;
     font-size: 1em;
-    color: #ebebeb;
+    color: var(--co_bw);
     background: none;
     position: relative;
     box-sizing: border-box;
     border-width: 0px 0px 2px;
     border-style: solid;
-    border-color: #ebebeb;
+    border-color:var(--co_bw);
     width: 60px;
     height: 38px;
 }
@@ -253,14 +280,14 @@ input[type = number]::-webkit-inner-spin-button {
     padding-top: 10px;
 }
 .gender{
-    color: #ebebeb;
+    color: var(--co_bw);
     text-align: center;
     background: none;
     position: relative;
     box-sizing: border-box;
     border-width: 0px 0px 2px;
     border-style: solid;
-    border-color: #ebebeb;
+    border-color: var(--co_bw);
     width: 300px;
     height: 38px;
     font-size: 1em;
@@ -271,20 +298,20 @@ input[type = number]::-webkit-inner-spin-button {
 #join_idpw{
     width: 450px;
     height: 450px;
-    background-color: #191919;
-    color: white;
+    background-color: var(--bg_co_wb);
+    color: var(--ft_co_bw);
     text-align: center;
     box-sizing: border-box;
 }
 
 .id_input, .pw_input, .repw_input{
-    color: #ebebeb;
+    color: var(--co_bw);
     background: none;
     position: relative;
     box-sizing: border-box;
     border-width: 0px 0px 2px;
     border-style: solid;
-    border-color: #ebebeb;
+    border-color: var(--co_bw);
     width: 300px;
     height: 38px;
     font-size: 1em;
@@ -304,9 +331,9 @@ input[type = number]::-webkit-inner-spin-button {
     width: 80px;
     height: 30px;
     background: none;
-    color: #ebebeb;
+    color: var(--co_bw);
     border-radius: 20px;
-    border: 1px solid #ebebeb; 
+    border: 1px solid var(--co_bw);
     cursor: pointer;  
 }
 .not_overlap{
@@ -325,7 +352,7 @@ input[type = number]::-webkit-inner-spin-button {
     width: 80px;
     height: 30px;
     background: none;
-    color: #ebebeb;
+    color: var(--co_bw);
     cursor: pointer;  
 }
 
@@ -340,13 +367,13 @@ input[type = number]::-webkit-inner-spin-button {
 
 /*===========키 몸무게==========================*/
 .height_input, .weight_input{
-    color: #ebebeb;
+    color: var(--co_bw);
     background: none;
     position: relative;
     box-sizing: border-box;
     border-width: 0px 0px 2px;
     border-style: solid;
-    border-color: #ebebeb;
+    border-color: var(--co_bw);
     width: 300px;
     height: 38px;
     font-size: 1em;
@@ -364,5 +391,8 @@ input[type = number]::-webkit-inner-spin-button {
     margin: 0;
 }
 footer{
+    margin-top: 70px;
+}
+#idpw_footer{
     margin-top: 110px;
 }
