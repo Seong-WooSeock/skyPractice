@@ -21,6 +21,84 @@
     --border_co: white;/*보더 색상*/
     --border2: 2px solid white; /*보더2*/
 }
+.ed_open{
+    cursor: pointer;
+}
+.ev_de_container{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: 99997;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.opacity_dp{
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99998;
+    background-color: #191919;
+    opacity: 0.8;
+}
+.ev_de_wrap{
+    position: fixed;
+    z-index: 99999;
+    width: 70%;
+    height: 90%;
+    top: 5%;
+    left: 15%;
+    background-color: white;
+}
+.ev_de_content{
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    top: 10px;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.ev_de_content h1{
+    text-align: center;
+}
+
+.ev_de_content p{
+    padding-left: 10px;
+    text-align: left;
+}
+ 
+.ev_de_content::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Opera*/
+  }
+
+.ed_btn_box{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    bottom:10px;
+}
+
+.ev_de_btn{
+    margin-right: 20px;
+    padding: 10px 25px;
+    background-color: #ffffff;
+    border: 2px solid #191919;
+    color:#191919;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 20px;
+}
 
 .content{
     width: 100%;
@@ -143,22 +221,9 @@
     opacity: 0.5;
 }
 
-.btnBox{
-    margin: 20px 0 20px 0;
-    text-align: right;
-}
 
-.backList{
-    margin-right: 20px;
-    padding: 20px 40px 20px 40px;
-    background-color: var(--bg_co_wb);
-    border: var(--border2);
-    color: var(--ft_co_bw);
-    border-radius: 30px;
-    cursor: pointer;
-    font-family: 'Nanum Gothic', sans-serif;
-    font-size: 20px;
-}
+
+
 
 @media screen and (max-width: 426px){
     .header_box{

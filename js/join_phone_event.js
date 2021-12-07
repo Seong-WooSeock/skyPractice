@@ -34,7 +34,7 @@ phone_input[0].onkeyup = () => {
         not_null[0].style.display = 'none';
     }
 }
-console.log(phone_input[0].value);
+
 phone_input[0].onblur = () => {
     if (phone_input[0].value.length == 0) {
         not_null[0].style.display = 'block';

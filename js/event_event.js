@@ -109,6 +109,41 @@ function dm_event() {
     }
 }
 
+// -------------------이벤트정보 클릭 ajax ---------------------
+const ev_de_container = document.querySelector('.ev_de_container');
+const opacity_dp = document.querySelector('.opacity_dp');
+const ev_de_content = document.querySelector('.ev_de_content');
+const ev_de_btn = document.querySelector('.ev_de_btn');
+let ed_open = document.querySelectorAll('.ed_open');
+
+function aTag_ajax(txt_file) {
+    fetch(txt_file).then(response => {
+        response.text().then(text => {
+            document.querySelector('#ed_co').innerHTML = text;
+        })
+    });
+}
+
+for (let i = 0; i < ed_open.length; i++){
+    ed_open[i].onclick = () => {
+        ev_de_container.style.display = 'block';
+        aTag_ajax("./eventDetail/event" + (i+1));
+        ev_de_btn.onclick = () => {
+            ev_de_container.style.display = 'none';
+        }
+        opacity_dp.onclick = () => {
+            ev_de_container.style.display = 'none';
+        }
+    }
+}
+
+
+
+// -------------------이벤트정보 클릭 ajax ---------------------
+
+
+
+// -------------------이미지 경로----------------------
 
 if (localStorage.getItem('color-theme') == 'dark') {
     dm_event()
@@ -116,9 +151,10 @@ if (localStorage.getItem('color-theme') == 'dark') {
     lm_event()
 }
 
-
-
 // -------------------이미지 경로----------------------
+
+
+
 function lm() {
     lm_event()
     let headerMenuToggleImg = document.getElementById("headerMenuToggleImg");
@@ -149,3 +185,7 @@ function dm() {
     headerMenuToggleImg.src = "../../images/menuList.png";
 }
 // -------------------이미지 경로----------------------
+
+
+
+
